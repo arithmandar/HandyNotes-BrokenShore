@@ -134,16 +134,21 @@ DB.points = {
 			rare = true,
 			label = L["Brother Badatin"],
 		},
-		[61913840] = {
---			npc = 118720,
+		[40348045] = {
+			npc = 118993,
 			rare = true,
---			label = L[""],
+			label = L["Dreadeye"],
 		},
 		[39553265] = {
 			npc = 121029,
 			rare = true,
 			label = L["Brood Mother Nix"],
 			note = BZ["Blood Nest"],
+		},
+		[61913840] = {
+--			npc = 118720,
+			rare = true,
+--			label = L[""],
 		},
 		[49114800] = {
 --			npc = 118720,
