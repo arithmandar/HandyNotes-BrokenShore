@@ -139,6 +139,11 @@ DB.points = {
 			rare = true,
 			label = L["Dreadeye"],
 		},
+		[40385977] = {
+			npc = 120998,
+			rare = true,
+			label = L["Flllurlokkr"],
+		},
 		[39553265] = {
 			npc = 121029,
 			rare = true,
@@ -151,9 +156,9 @@ DB.points = {
 --			label = L[""],
 		},
 		[49114800] = {
---			npc = 118720,
+			npc = 117090,
 			rare = true,
---			label = L[""],
+			label = L["Xorogun the Flamecarver"],
 		},
 		[39194241] = {
 --			npc = 118720,

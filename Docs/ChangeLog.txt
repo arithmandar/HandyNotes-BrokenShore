@@ -3,6 +3,10 @@ $Id$
 Revision History:
 =================
 
+* v1.01 (Apr. 21, 2017)
+-----------------------
+- Added Flllurlokkr, Xorogun the Flamecarver
+
 * v1.00 (Apr. 21, 2017)
 -----------------------
 - Initial version which support WoW 7.2.0
