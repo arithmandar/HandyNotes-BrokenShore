@@ -36,19 +36,7 @@ local function work_out_texture(point)
 	if (point.entrance) then icon_key = "entrance" end
 	if (point.ramp) then icon_key = "ramp" end
 	if (point.rare) then icon_key = "rare" end
-	if (point.treasure) then
-		icon_key = "treasure" 
---[[		local icon
-		local texture, _, _, left, right, top, bottom = GetAtlasInfo("VignetteLoot")
-		icon = {
-			icon = texture,
-			tCoordLeft = left,
-			tCoordRight = right,
-			tCoordTop = top,
-			tCoordBottom = bottom,
-		}
-		return icon]]
-	end
+	if (point.treasure) then icon_key = "treasure" end
 	
 	if (icon_key and private.constants.icon_texture[icon_key]) then
 		return private.constants.icon_texture[icon_key]
@@ -62,7 +50,9 @@ end
 
 local get_point_info = function(point)
 	if point then
+		if point.treasure then point.label = L["Veiled Wyrmtongue Cache"] end
 		local label = point.label or UNKNOWN
+		if point.treasure then label = L["Veiled Wyrmtongue Cache"] end
 		local icon = work_out_texture(point)
 
 		return label, icon, point.scale
