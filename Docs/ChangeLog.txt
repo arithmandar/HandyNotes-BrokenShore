@@ -3,7 +3,7 @@ $Id$
 Revision History:
 =================
 
-* v1.01 (Apr. xx, 2017)
+* v1.01 (Apr. 22, 2017)
 -----------------------
 - Added the following rare mobs: Flllurlokkr, Xorogun the Flamecarver, 
   Somber Dawn, Lady Eldrathe, Doombringer Zar'thoz, Emberfire, 
