@@ -3,6 +3,13 @@ $Id$
 Revision History:
 =================
 
+* v1.02 (Apr. xx, 2017)
+-----------------------
+- Added Inquisitor Chillbane
+- Added a few more treasure cachs and slightly adjust some of them's location
+- Localization update:
+  - Traditional Chinese
+
 * v1.01 (Apr. 22, 2017)
 -----------------------
 - Added the following rare mobs: Flllurlokkr, Xorogun the Flamecarver, 

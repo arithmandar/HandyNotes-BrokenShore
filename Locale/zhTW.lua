@@ -38,7 +38,7 @@ L["SHOWRARE_DESC"] = "顯示稀有菁英怪的節點，即便他們還沒重生�
 L["SHOWOTHERS"] = "顯示其他"
 L["SHOWOTHERS_DESC"] = "顯示所有其他雜項節點。"
 L["SHOWTREASURE"] = "顯示寶箱"
-L["SHOWTREASURE_DESC"] = "顯示隱藏的寶箱可能的重生點"
+L["SHOWTREASURE_DESC"] = "顯示「難以發現的蟲舌魔寶箱」可能的重生點"
 
 -- //////////////////////////
 -- Common
@@ -54,7 +54,7 @@ L["Ramp to %s"] = "通往%s的斜坡"
 -- Others
 -- //////////////////////////
 L["Peculiar Rope"] = "奇異的繩索"
-L["Veiled Wyrmtongue Cache"] = "隱藏的寶箱"
+L["Veiled Wyrmtongue Cache"] = "難以發現的蟲舌魔寶箱"
 
 --@end-do-not-package@
 --@localization(locale="zhTW", format="lua_additive_table")@

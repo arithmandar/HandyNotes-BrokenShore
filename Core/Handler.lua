@@ -50,7 +50,10 @@ end
 
 local get_point_info = function(point)
 	if point then
-		if point.treasure then point.label = L["Veiled Wyrmtongue Cache"] end
+		if (point.treasure) then 
+			point.label = L["Veiled Wyrmtongue Cache"] 
+			point.scale = 1.0
+		end
 		local label = point.label or UNKNOWN
 		if point.treasure then label = L["Veiled Wyrmtongue Cache"] end
 		local icon = work_out_texture(point)
