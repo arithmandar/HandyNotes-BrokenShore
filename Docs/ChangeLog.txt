@@ -3,9 +3,14 @@ $Id$
 Revision History:
 =================
 
-* v1.01 (Apr. 21, 2017)
+* v1.01 (Apr. xx, 2017)
 -----------------------
-- Added Flllurlokkr, Xorogun the Flamecarver, Somber Dawn
+- Added the following rare mobs: Flllurlokkr, Xorogun the Flamecarver, 
+  Somber Dawn, Lady Eldrathe, Doombringer Zar'thoz, Emberfire, 
+  Felmaw Emberfiend
+- Fixed the issue of profile configs can be saved
+- Fixed wrong texture path
+- Added Veiled Wyrmtongue Cache's locations
 
 * v1.00 (Apr. 21, 2017)
 -----------------------

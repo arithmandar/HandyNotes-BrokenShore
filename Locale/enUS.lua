@@ -36,6 +36,8 @@ L["SHOWRARE"] = "Show rare mob's nodes"
 L["SHOWRARE_DESC"] = "Show rare mobs' location even if any of them has not yet spawn."
 L["SHOWOTHERS"] = "Show other nodes"
 L["SHOWOTHERS_DESC"] = "Show all the other misc nodes."
+L["SHOWTREASURE"] = "Show Veiled Wyrmtongue Cache"
+L["SHOWTREASURE_DESC"] = "Show possible re-spawn location for Veiled Wyrmtongue Cache"
 
 -- //////////////////////////
 -- Common
@@ -51,6 +53,7 @@ L["Ramp to %s"] = "Ramp to %s"
 -- Others
 -- //////////////////////////
 L["Peculiar Rope"] = "Peculiar Rope"
+L["Veiled Wyrmtongue Cache"] = "Veiled Wyrmtongue Cache"
 
 --@end-do-not-package@
 --@localization(locale="enUS", format="lua_additive_table")@

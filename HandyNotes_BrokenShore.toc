@@ -33,7 +33,7 @@
 ## Version: @project-version@
 ## RequiredDeps: HandyNotes
 ## DefaultState: enabled
-## SavedVariables: HandyNotes_SuramarShalAranTelemancyDB
+## SavedVariables: HandyNotes_BrokenShoreDB
 ## X-Date: @project-date-iso@
 ## X-License: GPLv2
 ## X-Category: Map

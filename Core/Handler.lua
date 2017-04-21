@@ -27,7 +27,7 @@ local addon = LibStub("AceAddon-3.0"):NewAddon(private.addon_name, "AceEvent-3.0
 addon.constants = private.constants;
 addon.constants.addon_name = private.addon_name;
 addon.Name = FOLDER_NAME;
-_G.HandyNotes_LegionClassOrderHalls = addon;
+_G.HandyNotes_BrokenShore = addon;
 
 -- //////////////////////////////////////////////////////////////////////////
 local function work_out_texture(point)
@@ -36,6 +36,19 @@ local function work_out_texture(point)
 	if (point.entrance) then icon_key = "entrance" end
 	if (point.ramp) then icon_key = "ramp" end
 	if (point.rare) then icon_key = "rare" end
+	if (point.treasure) then
+		icon_key = "treasure" 
+--[[		local icon
+		local texture, _, _, left, right, top, bottom = GetAtlasInfo("VignetteLoot")
+		icon = {
+			icon = texture,
+			tCoordLeft = left,
+			tCoordRight = right,
+			tCoordTop = top,
+			tCoordBottom = bottom,
+		}
+		return icon]]
+	end
 	
 	if (icon_key and private.constants.icon_texture[icon_key]) then
 		return private.constants.icon_texture[icon_key]
@@ -218,6 +231,9 @@ do
 			return false
 		end
 		if (point.others and not private.db.show_others) then
+			return false
+		end
+		if (point.treasure and not private.db.show_treasure) then
 			return false
 		end
 		if (point.level and point.level ~= currentLevel) then

@@ -78,17 +78,23 @@ config.options = {
 					desc = L["SHOWRARE_DESC"],
 					order = 12,
 				},
+				show_treasure = {
+					type = "toggle",
+					name = L["SHOWTREASURE"],
+					desc = L["SHOWTREASURE_DESC"],
+					order = 13,
+				},
 				show_others = {
 					type = "toggle",
 					name = L["SHOWOTHERS"],
 					desc = L["SHOWOTHERS_DESC"],
-					order = 13,
+					order = 14,
 				},
 				show_note = {
 					type = "toggle",
 					name = L["SHOWNOTE"],
 					desc = L["SHOWNOTE_DESC"],
-					order = 14,
+					order = 15,
 				},
 				query_server = {
 					type = "toggle",
