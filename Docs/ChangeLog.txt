@@ -5,7 +5,7 @@ Revision History:
 
 * v1.01 (Apr. 21, 2017)
 -----------------------
-- Added Flllurlokkr, Xorogun the Flamecarver
+- Added Flllurlokkr, Xorogun the Flamecarver, Somber Dawn
 
 * v1.00 (Apr. 21, 2017)
 -----------------------

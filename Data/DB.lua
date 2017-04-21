@@ -144,6 +144,11 @@ DB.points = {
 			rare = true,
 			label = L["Flllurlokkr"],
 		},
+		[31315933] = {
+			npc = 121112,
+			rare = true,
+			label = L["Somber Dawn"],
+		},
 		[39553265] = {
 			npc = 121029,
 			rare = true,
