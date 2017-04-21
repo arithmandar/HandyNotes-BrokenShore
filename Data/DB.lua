@@ -190,6 +190,11 @@ DB.points = {
 			rare = true,
 			label = L["Felmaw Emberfiend"],
 		},
+		[44645317] = {
+			npc = 119629,
+			rare = true,
+			label = L["Lord Hel'Nurath"],
+		},
 		[77842292] = {
 --			npc = 118720,
 			rare = true,
