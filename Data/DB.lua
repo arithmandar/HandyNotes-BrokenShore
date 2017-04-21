@@ -175,11 +175,6 @@ DB.points = {
 			rare = true,
 			label = L["Emberfire"],
 		},
-		[61913840] = {
---			npc = 118720,
-			rare = true,
---			label = L[""],
-		},
 		[49114800] = {
 			npc = 117090,
 			rare = true,
@@ -195,12 +190,17 @@ DB.points = {
 			rare = true,
 			label = L["Lord Hel'Nurath"],
 		},
+		[58294288] = {
+			npc = 117093,
+			rare = true,
+			label = L["Felbringer Xar'thok"],
+		},
 		[77842292] = {
 --			npc = 118720,
 			rare = true,
 --			label = L[""],
 		},
-		[77842292] = {
+		[61913840] = {
 --			npc = 118720,
 			rare = true,
 --			label = L[""],
