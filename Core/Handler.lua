@@ -50,15 +50,21 @@ end
 
 local get_point_info = function(point)
 	if point then
-		if (point.treasure) then 
-			point.label = L["Veiled Wyrmtongue Cache"] 
-			point.scale = 1.0
-		end
 		local label = point.label or UNKNOWN
-		if point.treasure then label = L["Veiled Wyrmtongue Cache"] end
+		if (point.treasure) then 
+			if not point.label then point.label = L["Veiled Wyrmtongue Cache"] end
+			if not point.scale then point.scale = 1.0 end
+		end
+		if (point.rare) then
+			if not point.alpha then point.alpha = 0.6 end
+		end
+		if (point.entrance) then
+			if not point.alpha then point.alpha = 0.8 end
+		end
+
 		local icon = work_out_texture(point)
 
-		return label, icon, point.scale
+		return label, icon, point.scale, point.alpha
 	end
 end
 
@@ -196,9 +202,10 @@ do
 		local state, value = next(t, prestate)
 		while state do -- Have we reached the end of this zone?
 			if value and private:ShouldShow(state, value, currentZone, currentLevel) then
-				local label, icon, scale = get_point_info(value)
+				local label, icon, scale, alpha = get_point_info(value)
 				scale = (scale or 1) * (icon and icon.scale or 1) * private.db.icon_scale
-				return state, nil, icon, scale, private.db.icon_alpha
+				alpha = (alpha or 1) * (icon and icon.alpha or 1) * private.db.icon_alpha
+				return state, nil, icon, scale, alpha
 			end
 			state, value = next(t, state) -- Get next data
 		end

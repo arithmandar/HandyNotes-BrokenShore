@@ -3,12 +3,14 @@ $Id$
 Revision History:
 =================
 
-* v1.02 (Apr. xx, 2017)
+* v1.02 (Apr. 24, 2017)
 -----------------------
-- Added Inquisitor Chillbane
+- Added Inquisitor Chillbane, Malgrazoth, Dreadblade Annihilator, Grossir
+- Added entrance of Felbreach Hollow
 - Added a few more treasure cachs and slightly adjust some of them's location
 - Localization update:
   - Traditional Chinese
+  - German (pas06)
 
 * v1.01 (Apr. 22, 2017)
 -----------------------
@@ -18,6 +20,9 @@ Revision History:
 - Fixed the issue of profile configs can be saved
 - Fixed wrong texture path
 - Added Veiled Wyrmtongue Cache's locations
+- Localization update:
+  - Korean (yuk6196)
+  - German (pas06)
 
 * v1.00 (Apr. 21, 2017)
 -----------------------

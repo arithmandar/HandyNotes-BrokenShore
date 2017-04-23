@@ -80,6 +80,11 @@ DB.points = {
 			label = L["Entrance"],
 			entrance = true,
 		},
+		[56162724] = {
+			label = format(L["Entrance of %s"], BZ["Felbreach Hollow"]),
+			entrance = true,
+		},
+		
 		-- /////////////////////////////////
 		-- ramp
 		-- /////////////////////////////////
@@ -107,7 +112,7 @@ DB.points = {
 			npc = 116166,
 			rare = true,
 			label = L["Eye of Gurgh"],
-			note = BZ["Felsworn Vault"],
+			note = format(L["Inside %s"], BZ["Felsworn Vault"]),
 		},
 		[57085649] = {
 			npc = 117096,
@@ -153,7 +158,7 @@ DB.points = {
 			npc = 121029,
 			rare = true,
 			label = L["Brood Mother Nix"],
-			note = BZ["Blood Nest"],
+			note = format(L["Inside %s"], BZ["Blood Nest"]),
 		},
 		[41601723] = {
 			npc = 121107,
@@ -196,14 +201,25 @@ DB.points = {
 			label = L["Felbringer Xar'thok"],
 		},
 		[77842292] = {
---			npc = 118720,
+			npc = 121037,
 			rare = true,
---			label = L[""],
+			label = L["Grossir"],
 		},
 		[61913840] = {
 			npc = 117089,
 			rare = true,
 			label = L["Inquisitor Chillbane"],
+		},
+		[57793148] = {
+			npc = 117095,
+			rare = true,
+			label = L["Dreadblade Annihilator"],
+		},
+		[59692724] = {
+			npc = 117141,
+			rare = true,
+			label = L["Malgrazoth"],
+			note = format(L["Inside %s"], BZ["Felbreach Hollow"]),
 		},
 		-- /////////////////////////////////
 		-- Others
@@ -213,6 +229,7 @@ DB.points = {
 			note = format(L["Entrance to %s"], BZ["Secret Treasure Lair"]),
 			others = true,
 			icon = private.constants.icon_texture["yellowButton"],
+			scale = 0.6,
 		},
 		[44566304] = {
 			label = L["Legionfall Construction Table"],
@@ -255,7 +272,7 @@ DB.points = {
 		[82403100] = { treasure = true, }, 
 		[74702980] = { treasure = true, }, 
 		[70733176] = { treasure = true, }, 
-		[69503800] = { treasure = true, }, 
+		[69423801] = { treasure = true, }, 
 		[67904210] = { treasure = true, }, 
 		[79003730] = { treasure = true, }, 
 		[76003600] = { treasure = true, }, 
@@ -299,17 +316,22 @@ DB.points = {
 		[50805970] = { treasure = true, }, 
 		[39005830] = { treasure = true, }, 
 		[37806130] = { treasure = true, }, 
-		[40106110] = { treasure = true, }, 
+		[40126099] = { treasure = true, note=format(L["Inside %s"], BZ["Stonefin Shoals"]) },
 		[42906200] = { treasure = true, }, 
-		[45906380] = { treasure = true, scale = 1.0, note=BZ["The Pit of Agony"] }, 
+		[45906380] = { treasure = true, note=format(L["Inside %s"], BZ["The Pit of Agony"]) }, 
 		[47306700] = { treasure = true, }, 
 		[56306510] = { treasure = true, }, 
 		[36907150] = { treasure = true, }, 
 		[51707050] = { treasure = true, }, 
 		[54607400] = { treasure = true, }, 
 		[51907700] = { treasure = true, }, 
-		[53008180] = { treasure = true, scale = 1.0, },
-		[70003756] = { treasure = true, scale = 1.0, },
-		[55245973] = { treasure = true, scale = 1.0, },
+		[53008180] = { treasure = true, },
+		[70003756] = { treasure = true, },
+		[55245973] = { treasure = true, },
+		[77062089] = { treasure = true, },
+		[84962312] = { treasure = true, },
+		[48113412] = { treasure = true, },
+		[37934293] = { treasure = true, },
+		[29486004] = { treasure = true, },
 	},
 }

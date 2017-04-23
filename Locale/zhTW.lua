@@ -49,6 +49,7 @@ L["Entrance"] = "入口"
 L["Entrance of %s"] = "%s的入口"
 L["Entrance to %s"] = "通往%s的入口"
 L["Ramp to %s"] = "通往%s的斜坡"
+L["Inside %s"] = "在%s裡面"
 
 -- //////////////////////////
 -- Others

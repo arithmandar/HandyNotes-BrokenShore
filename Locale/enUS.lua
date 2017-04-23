@@ -48,6 +48,7 @@ L["Entrance"] = "Entrance"
 L["Entrance of %s"] = "Entrance of %s"
 L["Entrance to %s"] = "Entrance to %s"
 L["Ramp to %s"] = "Ramp to %s"
+L["Inside %s"] = "Inside %s"
 
 -- //////////////////////////
 -- Others
