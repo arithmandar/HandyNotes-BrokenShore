@@ -7,7 +7,8 @@ Revision History:
 -----------------------
 - Added Inquisitor Chillbane, Malgrazoth, Dreadblade Annihilator, Grossir
 - Added entrance of Felbreach Hollow
-- Added a few more treasure cachs and slightly adjust some of them's location
+- Added several treasure chest nodes and slightly adjust some of them's location
+- Set mobs and entrances with alpha values
 - Localization update:
   - Traditional Chinese
   - German (pas06)
