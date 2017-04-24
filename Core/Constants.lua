@@ -28,6 +28,7 @@ constants.defaults = {
 		show_others = true, 
 		show_note = true,
 		show_treasure = true,
+		ignore_InOutDoor = false,
 	},
 	char = {
 		hidden = {
@@ -49,3 +50,12 @@ constants.icon_texture = {
 
 -- Define the default icon here
 constants.defaultIcon = constants.icon_texture["entrance"]
+
+constants.events = {
+	"ZONE_CHANGED",
+	"ZONE_CHANGED_INDOORS",
+	-- Fires when stepping off of a world map object. 
+	-- Appears to fire whenever the player has moved off of a structure 
+	-- such as a bridge or building and onto terrain or another object.
+	"NEW_WMO_CHUNK",
+};

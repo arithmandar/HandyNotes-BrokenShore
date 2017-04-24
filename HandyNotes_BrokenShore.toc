@@ -25,8 +25,10 @@
 #@end-non-debug@
 #@debug@
 ## Title: HandyNotes - Broken Shore
+## Title-zhCN: HandyNotes - 破碎海滩
 ## Title-zhTW: HandyNotes - 破碎海岸
 ## Notes: Shows the POIs in Broken Shore
+## Notes-zhCN: 顯示破碎海滩的 POI 位置
 ## Notes-zhTW: 顯示破碎海岸的 POI 位置
 #@end-debug@
 ## Author: arith

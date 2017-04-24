@@ -55,6 +55,7 @@ L["Inside %s"] = "Inside %s"
 -- //////////////////////////
 L["Peculiar Rope"] = "Peculiar Rope"
 L["Veiled Wyrmtongue Chest"] = "Veiled Wyrmtongue Chest"
+L["Add all treasure nodes to TomTom waypoints"] = "Add all treasure nodes to TomTom waypoints"
 
 --@end-do-not-package@
 --@localization(locale="enUS", format="lua_additive_table")@

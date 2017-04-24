@@ -40,6 +40,8 @@ local function work_out_texture(point)
 	
 	if (icon_key and private.constants.icon_texture[icon_key]) then
 		return private.constants.icon_texture[icon_key]
+	elseif (point.type and private.constants.icon_texture[point.type]) then
+		return private.constants.icon_texture[point.type]
 	-- use the icon specified in point data
 	elseif (point.icon) then
 		return point.icon
@@ -73,7 +75,12 @@ local get_point_info_by_coord = function(mapFile, coord)
 	return get_point_info(private.DB.points[mapFile] and private.DB.points[mapFile][coord])
 end
 
+--@debug@
+local function handle_tooltip(tooltip, point, coord)
+--@end-debug@
+--[===[@non-debug@
 local function handle_tooltip(tooltip, point)
+--@end-non-debug@]===]
 	if point then
 		if point.label then
 			if (point.npc and private.db.query_server) then
@@ -83,8 +90,11 @@ local function handle_tooltip(tooltip, point)
 			end
 		end
 		if (point.note and private.db.show_note) then
-			tooltip:AddLine(point.note, nil, nil, nil, true)
+			tooltip:AddLine("("..point.note..")", nil, nil, nil, true)
 		end
+--@debug@
+		tooltip:AddLine(coord, 1, 1, 1, true)
+--@end-debug@
 	else
 		tooltip:SetText(UNKNOWN)
 	end
@@ -93,7 +103,12 @@ end
 
 local handle_tooltip_by_coord = function(tooltip, mapFile, coord)
 	mapFile = string.gsub(mapFile, "_terrain%d+$", "")
+--@debug@
+	return handle_tooltip(tooltip, private.DB.points[mapFile] and private.DB.points[mapFile][coord], coord)
+--@end-debug@
+--[===[@non-debug@
 	return handle_tooltip(tooltip, private.DB.points[mapFile] and private.DB.points[mapFile][coord])
+--@end-non-debug@]===]
 end
 
 -- //////////////////////////////////////////////////////////////////////////
@@ -140,6 +155,21 @@ local function addTomTomWaypoint(button, mapFile, coord)
 	end
 end
 
+local function addAllTreasureToWayPoint(button, mapFile)
+	if TomTom then
+		local mapId = HandyNotes:GetMapFiletoMapID(mapFile)
+		for k, v in pairs(private.DB.treasures) do
+			local x, y = HandyNotes:getXY(k)
+			TomTom:AddMFWaypoint(mapId, nil, x, y, {
+				title = L["Veiled Wyrmtongue Chest"],
+				persistent = nil,
+				minimap = true,
+				world = true
+			})
+		end
+	end
+end
+
 do
 	local currentZone, currentCoord
 	local function generateMenu(button, level)
@@ -162,6 +192,14 @@ do
 				info.arg2 = currentCoord
 				UIDropDownMenu_AddButton(info, level)
 				wipe(info)
+
+				info.text = L["Add all treasure nodes to TomTom waypoints"]
+				info.notCheckable = 1
+				info.func = addAllTreasureToWayPoint
+				info.arg1 = currentZone
+				UIDropDownMenu_AddButton(info, level)
+				wipe(info)
+
 			end
 
 			 -- Hide menu item
@@ -245,12 +283,6 @@ do
 		if (point.hide_outdoor and not private.db.ignore_InOutDoor and IsOutdoors()) then
 			return false
 		end
-		if (point.hide_after and IsQuestFlaggedCompleted(point.hide_after)) then
-			return false
-		end
-		if (point.hide_before and not IsQuestFlaggedCompleted(point.hide_before)) then
-			return false
-		end
 		-- this will check if any node is for specific class
 		if (point.class and point.class ~= select(2, UnitClass("player"))) then
 			return false
@@ -271,9 +303,9 @@ function addon:OnInitialize()
 end
 
 function addon:OnEnable()
-	self:RegisterEvent("ZONE_CHANGED")
-	self:RegisterEvent("ZONE_CHANGED_NEW_AREA")
-	self:RegisterEvent("ZONE_CHANGED_INDOORS")
+	for key, value in pairs( addon.constants.events ) do
+		self:RegisterEvent( value );
+	end
 end
 
 function addon:Refresh()
@@ -284,11 +316,12 @@ function addon:ZONE_CHANGED()
 	addon:Refresh()
 end
 
-function addon:ZONE_CHANGED_NEW_AREA()
-	addon:Refresh()
-end
-
 function addon:ZONE_CHANGED_INDOORS()
 	addon:Refresh()
 end
+
+function addon:NEW_WMO_CHUNK()
+	addon:Refresh()
+end
+
 -- //////////////////////////////////////////////////////////////////////////
