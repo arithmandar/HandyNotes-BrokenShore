@@ -94,6 +94,13 @@ local function handle_tooltip(tooltip, point)
 		end
 --@debug@
 		tooltip:AddLine(coord, 1, 1, 1, true)
+		if (point.quest) then
+			if (IsQuestFlaggedCompleted(point.quest)) then
+				tooltip:AddDoubleLine(L["QuestID"], point.quest or UNKNOWN, 0.5, 0.5, 1, 1, 0.5, 1)
+			else
+				tooltip:AddDoubleLine(L["QuestID"], point.quest or UNKNOWN, 0.5, 0.5, 1, 0.5, 0.5, 1)
+			end
+		end
 --@end-debug@
 	else
 		tooltip:SetText(UNKNOWN)
@@ -281,6 +288,9 @@ do
 			return false
 		end
 		if (point.hide_outdoor and not private.db.ignore_InOutDoor and IsOutdoors()) then
+			return false
+		end
+		if (point.rare and point.quest and private.db.hide_completed and IsQuestFlaggedCompleted(point.quest)) then
 			return false
 		end
 		-- this will check if any node is for specific class

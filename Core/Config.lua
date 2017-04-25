@@ -90,17 +90,23 @@ config.options = {
 					desc = L["SHOWOTHERS_DESC"],
 					order = 14,
 				},
+				hide_completed = {
+					type = "toggle",
+					name = L["HIDECOMPLETED"],
+					desc = L["HIDECOMPLETED_DESC"],
+					order = 15,
+				},
 				show_note = {
 					type = "toggle",
 					name = L["SHOWNOTE"],
 					desc = L["SHOWNOTE_DESC"],
-					order = 15,
+					order = 16,
 				},
 				query_server = {
 					type = "toggle",
 					name = L["QUERY"],
 					desc = L["QUERY_DESC"],
-					order = 20,
+					order = 17,
 				},
 				unhide = {
 					type = "execute",

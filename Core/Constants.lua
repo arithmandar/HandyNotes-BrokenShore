@@ -29,6 +29,7 @@ constants.defaults = {
 		show_note = true,
 		show_treasure = true,
 		ignore_InOutDoor = false,
+		hide_completed = true,
 	},
 	char = {
 		hidden = {

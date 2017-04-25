@@ -3,6 +3,14 @@ $Id$
 Revision History:
 =================
 
+* v1.04 (Apr. 26, 2017)
+-----------------------
+- Added new treasure chest's location and slightly adjust some of chests' coordinates
+- Added rare mobs: Salethan the Broodwalker, Bonegnasher the Petrifying
+- Added rare mobs' quest ID and added option to hide the looted mobs
+- Localization update:
+  - Spanish (Pocimero)
+
 * v1.03 (Apr. 25, 2017)
 -----------------------
 - Added feature to support in adding all treasure chests' nodes into 

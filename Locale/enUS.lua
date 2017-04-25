@@ -27,17 +27,19 @@ L["Show all nodes that you manually hid by right-clicking on them and choosing \
 L["QUERY"] = "Query NPC name from server"
 L["QUERY_DESC"] = "Send query request to server to lookup NPC's localized name. May be a little bit slower for the first time lookup but would be very fast once the name is found and cached. "
 L["SHOWNOTE"] = "Show additional note"
-L["SHOWNOTE_DESC"] = "Show the node's additional notes when it's available"
+L["SHOWNOTE_DESC"] = "Show the node's additional notes when it's available. "
 L["SHOWENTRANCE"] = "Show entrance nodes"
-L["SHOWENTRANCE_DESC"] = "Show the entrance of specific cave or the entrance to special location."
+L["SHOWENTRANCE_DESC"] = "Show the entrance of specific cave or the entrance to special location. "
 L["SHOWRAMP"] = "Show ramp nodes"
 L["SHOWRAMP_DESC"] = "Show ramp to the higher ground. This could be useful before you can fly! "
 L["SHOWRARE"] = "Show rare mob's nodes"
-L["SHOWRARE_DESC"] = "Show rare mobs' location even if any of them has not yet spawn."
+L["SHOWRARE_DESC"] = "Show rare mobs' location even if any of them has not yet spawn. "
 L["SHOWOTHERS"] = "Show other nodes"
 L["SHOWOTHERS_DESC"] = "Show all the other misc nodes."
 L["SHOWTREASURE"] = "Show Veiled Wyrmtongue Chest"
-L["SHOWTREASURE_DESC"] = "Show possible re-spawn location for Veiled Wyrmtongue Chest"
+L["SHOWTREASURE_DESC"] = "Show possible re-spawn location for Veiled Wyrmtongue Chest. "
+L["HIDECOMPLETED"] = "Hide looted mobs"
+L["HIDECOMPLETED_DESC"] = "Hide the rare elite mobs which have been killed and looted today. "
 
 -- //////////////////////////
 -- Common

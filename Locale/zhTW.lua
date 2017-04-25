@@ -55,7 +55,7 @@ L["Inside %s"] = "在%s裡面"
 -- Others
 -- //////////////////////////
 L["Peculiar Rope"] = "奇異的繩索"
-L["Veiled Wyrmtongue Chest"] = "難以發現的蟲舌魔寶箱"
+L["Veiled Wyrmtongue Chest"] = "隱密的蟲舌魔寶箱"
 L["Add all treasure nodes to TomTom waypoints"] = "將所有的寶箱節點加到 TomTom 路徑上"
 
 --@end-do-not-package@
