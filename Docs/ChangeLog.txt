@@ -5,13 +5,19 @@ Revision History:
 
 * v1.03 (Apr. 25, 2017)
 -----------------------
+- Added feature to support in adding all treasure chests' nodes into 
+  TomTom's waypoints
 - Added rare mob: Aqueux
-- Mark some of the nodes to be hidden while is indoor as those are outdoor nodes
+- Mark some of the nodes to be hidden while is indoor as those are 
+  outdoor nodes
 - Slightly adjust some of chests' coordinates
 - Added Entrance of Feldust Cavern
 - Added location of Drak'thul
 - Localization update:
   - Simplified Chinese
+  - German (pas06, Sunflow72)
+  - Korean (yuk6196)
+  - Russian (BLizzatron)
 
 * v1.02 (Apr. 24, 2017)
 -----------------------
