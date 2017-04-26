@@ -10,6 +10,8 @@ Revision History:
 - Added rare mobs' quest ID and added option to hide the looted mobs
 - Localization update:
   - Spanish (Pocimero)
+  - Russian (BLizzatron)
+  - Korean (yuk6196)
 
 * v1.03 (Apr. 25, 2017)
 -----------------------

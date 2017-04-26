@@ -28,7 +28,7 @@ L["Show all nodes that you manually hid by right-clicking on them and choosing \
 L["QUERY"] = "從伺服器查詢 NPC 名稱"
 L["QUERY_DESC"] = "向伺服器送出查詢 NPC 名稱的請求。首次查詢名稱時可能會顯示稍慢，一旦查詢到或該名稱已有快取時則會立即顯示。"
 L["SHOWNOTE"] = "顯示節點說明"
-L["SHOWNOTE_DESC"] = "當節點有額外說明時，同時顯示該說明"
+L["SHOWNOTE_DESC"] = "當節點有額外說明時，同時顯示該說明。"
 L["SHOWENTRANCE"] = "顯示入口"
 L["SHOWENTRANCE_DESC"] = "顯示特定洞穴的入口節點，或是會將你帶去特殊位置的入口位置。"
 L["SHOWRAMP"] = "顯示斜坡"
@@ -38,7 +38,9 @@ L["SHOWRARE_DESC"] = "顯示稀有菁英怪的節點，即便他們還沒重生�
 L["SHOWOTHERS"] = "顯示其他"
 L["SHOWOTHERS_DESC"] = "顯示所有其他雜項節點。"
 L["SHOWTREASURE"] = "顯示寶箱"
-L["SHOWTREASURE_DESC"] = "顯示「難以發現的蟲舌魔寶箱」可能的重生點"
+L["SHOWTREASURE_DESC"] = "顯示「隱密的蟲舌魔寶箱」可能的重生點。"
+L["HIDECOMPLETED"] = "隱藏已擊殺"
+L["HIDECOMPLETED_DESC"] = "隱藏今日已擊殺並拾取的稀有菁英怪。"
 
 -- //////////////////////////
 -- Common
