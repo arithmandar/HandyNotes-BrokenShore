@@ -3,6 +3,13 @@ $Id$
 Revision History:
 =================
 
+* v1.05 (Apr. 27, 2017)
+-----------------------
+- Added new treasure chest's location and slightly adjust some of chests' coordinates
+- Added missing quest ID to rare mobs.  
+- Localization update:
+  - German (pas06, gOOvER, Sunflow72)
+
 * v1.04 (Apr. 26, 2017)
 -----------------------
 - Added new treasure chest's location and slightly adjust some of chests' coordinates
