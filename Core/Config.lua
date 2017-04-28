@@ -19,19 +19,19 @@ private.config = config
 
 config.options = {
 	type = "group",
-	name = L["PLUGIN_NAME"],
-	desc = L["ADDON_DESC"],
+	name = addon.pluginName,
+	desc = addon.description,
 	get = function(info) return private.db[info[#info]] end,
 	set = function(info, v)
 		private.db[info[#info]] = v
-		addon:SendMessage("HandyNotes_NotifyUpdate", private.addon_name:gsub("HandyNotes_", ""))
+		addon:SendMessage("HandyNotes_NotifyUpdate", addon.pluginName)
 	end,
 	args = {
 		icon = {
 			type = "group",
 			name = L["Icon settings"],
 			inline = true,
-			order = 1,
+			order = 10,
 			args = {
 				desc = {
 					name = L["These settings control the look and feel of the icon."],
@@ -58,55 +58,68 @@ config.options = {
 			type = "group",
 			name = L["What to display"],
 			inline = true,
-			order = 2,
+			order = 20,
 			args = {
+				desc = {
+					name = L["These settings control what type of icons to be displayed."],
+					type = "description",
+					order = 0,
+				},
 				show_entrance = {
 					type = "toggle",
-					name = L["SHOWENTRANCE"],
-					desc = L["SHOWENTRANCE_DESC"],
+					name = L["Entrance"],
+					desc = L["Show the entrance of specific cave or the entrance to special location."],
 					order = 10,
 				},
 				show_ramp = {
 					type = "toggle",
-					name = L["SHOWRAMP"],
-					desc = L["SHOWRAMP_DESC"],
+					name = L["Ramp"],
+					desc = L["Show ramp to the higher ground. This could be useful before you can fly!"],
 					order = 11,
 				},
 				show_rare = {
 					type = "toggle",
-					name = L["SHOWRARE"],
-					desc = L["SHOWRARE_DESC"],
+					name = L["Rare mobs"],
+					desc = L["Show rare mobs' location even if any of them has not yet spawned."],
 					order = 12,
 				},
 				show_treasure = {
 					type = "toggle",
-					name = L["SHOWTREASURE"],
-					desc = L["SHOWTREASURE_DESC"],
+					name = L["Wyrmtongue Chest"],
+					desc = L["Show possible spawning location of Veiled Wyrmtongue Chest."],
 					order = 13,
 				},
 				show_others = {
 					type = "toggle",
-					name = L["SHOWOTHERS"],
-					desc = L["SHOWOTHERS_DESC"],
+					name = L["Others"],
+					desc = L["Show all the other misc nodes."],
 					order = 14,
 				},
-				hide_completed = {
+			},
+		},
+		plugin_config = {
+			type = "group",
+			name = L["AddOn Settings"],
+			inline = true,
+			order = 30,
+			args = {
+				query_server = {
 					type = "toggle",
-					name = L["HIDECOMPLETED"],
-					desc = L["HIDECOMPLETED_DESC"],
-					order = 15,
+					name = L["Query from server"],
+					desc = L["Send query request to server to lookup localized names. May be a little bit slower for the first time lookup but would be very fast once the name is found and cached."],
+					order = 10,
 				},
 				show_note = {
 					type = "toggle",
-					name = L["SHOWNOTE"],
-					desc = L["SHOWNOTE_DESC"],
-					order = 16,
+					name = L["Show note"],
+					desc = L["Show the node's additional notes when it's available."],
+					order = 11,
 				},
-				query_server = {
+				hide_completed = {
 					type = "toggle",
-					name = L["QUERY"],
-					desc = L["QUERY_DESC"],
-					order = 17,
+					name = L["Hide looted mobs"],
+					desc = L["Hide the rare elite mobs which have been killed and looted today."],
+					order = 15,
 				},
 				unhide = {
 					type = "execute",

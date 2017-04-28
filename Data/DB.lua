@@ -27,7 +27,8 @@ local function GetLocaleLibBabble(typ)
 	end
 	return rettab;
 end
-local BZ = GetLocaleLibBabble("LibBabble-SubZone-3.0");
+local BZ = GetLocaleLibBabble("LibBabble-SubZone-3.0")
+
 local function mapFile(mapID)
 	return HandyNotes:GetMapIDtoMapFile(mapID)
 end

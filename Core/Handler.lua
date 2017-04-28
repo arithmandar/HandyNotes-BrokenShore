@@ -26,6 +26,11 @@ local HandyNotes = LibStub("AceAddon-3.0"):GetAddon("HandyNotes")
 local addon = LibStub("AceAddon-3.0"):NewAddon(private.addon_name, "AceEvent-3.0")
 addon.constants = private.constants;
 addon.constants.addon_name = private.addon_name;
+
+addon.descName = L["HandyNotes - Broken Shore"]
+addon.description = L["Shows the POIs in Broken Shore"]
+addon.pluginName = L["Broken Shore"]
+
 addon.Name = FOLDER_NAME;
 _G.HandyNotes_BrokenShore = addon;
 
@@ -309,7 +314,7 @@ function addon:OnInitialize()
 	private.hidden = self.db.char.hidden
 
 	-- Initialize database with HandyNotes
-	HandyNotes:RegisterPluginDB(private.addon_name:gsub("HandyNotes_", ""), PluginHandler, private.config.options)
+	HandyNotes:RegisterPluginDB(addon.pluginName, PluginHandler, private.config.options)
 end
 
 function addon:OnEnable()
@@ -319,7 +324,7 @@ function addon:OnEnable()
 end
 
 function addon:Refresh()
-	self:SendMessage("HandyNotes_NotifyUpdate", private.addon_name:gsub("HandyNotes_", ""))
+	self:SendMessage("HandyNotes_NotifyUpdate", addon.pluginName)
 end
 
 function addon:ZONE_CHANGED()
