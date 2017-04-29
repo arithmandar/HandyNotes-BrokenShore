@@ -339,4 +339,8 @@ function addon:NEW_WMO_CHUNK()
 	addon:Refresh()
 end
 
+function addon:ENCOUNTER_LOOT_RECEIVED()
+	addon:Refresh()
+end
+
 -- //////////////////////////////////////////////////////////////////////////
