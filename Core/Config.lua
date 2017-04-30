@@ -89,11 +89,17 @@ config.options = {
 					desc = L["Show possible spawning location of Veiled Wyrmtongue Chest."],
 					order = 13,
 				},
+				show_shrine = {
+					type = "toggle",
+					name = L["Ancient Shrine"],
+					desc = L["Show Ancient Shrine's locations."],
+					order = 13,
+				},
 				show_others = {
 					type = "toggle",
 					name = L["Others"],
 					desc = L["Show all the other misc nodes."],
-					order = 14,
+					order = 20,
 				},
 			},
 		},

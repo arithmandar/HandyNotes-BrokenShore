@@ -33,6 +33,8 @@ L["Rare mobs"] = "稀有怪"
 L["Show rare mobs' location even if any of them has not yet spawned."] = "顯示稀有菁英怪的節點，即便他們還沒重生。"
 L["Wyrmtongue Chest"] = "蟲舌魔寶箱"
 L["Show possible spawning location of Veiled Wyrmtongue Chest."] = "顯示「隱密的蟲舌魔寶箱」可能的重生點。"
+L["Ancient Shrine"] = "上古祭壇"
+L["Show Ancient Shrine's locations."] = "顯示上古祭壇的節點位置。"
 L["Others"] = "其他"
 L["Show all the other misc nodes."] = "顯示所有其他雜項節點。"
 -- AddOn Settings

@@ -28,6 +28,7 @@ constants.defaults = {
 		show_others = true, 
 		show_note = true,
 		show_treasure = true,
+		show_shrine = true,
 		ignore_InOutDoor = false,
 		hide_completed = true,
 	},

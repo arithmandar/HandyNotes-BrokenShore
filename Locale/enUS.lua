@@ -32,6 +32,8 @@ L["Rare mobs"] = "Rare mobs"
 L["Show rare mobs' location even if any of them has not yet spawned."] = "Show rare mobs' location even if any of them has not yet spawned."
 L["Wyrmtongue Chest"] = "Wyrmtongue Chest"
 L["Show possible spawning location of Veiled Wyrmtongue Chest."] = "Show possible spawning location of Veiled Wyrmtongue Chest."
+L["Ancient Shrine"] = "Ancient Shrine"
+L["Show Ancient Shrine's locations."] = "Show Ancient Shrine's locations."
 L["Others"] = "Others"
 L["Show all the other misc nodes."] = "Show all the other misc nodes."
 -- AddOn Settings
