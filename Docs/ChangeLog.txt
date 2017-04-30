@@ -3,12 +3,20 @@ $Id$
 Revision History:
 =================
 
+* v1.07 (May xx, 2017)
+-----------------------
+- Added new treasure chest's location
+- Added nodes of Ancient Shrine
+- Added feature to add all Ancinet Shrine nodes to TomTom Waypoint
+- Localization update:
+  - Russian (BLizzatron)
+
 * v1.06 (Apr. 29, 2017)
 -----------------------
 - Re-organized config options
 - Standardize localization key style
-- Slightly adjust some of chests' coordinates
 - Changed the registered name to HandyNotes
+- Slightly adjust some of chests' coordinates
 - Added to listen ENCOUNTER_LOOT_RECEIVED event so that once the rare mob is 
   killed and looted, then the addon will get refresh. 
 - Localization update:

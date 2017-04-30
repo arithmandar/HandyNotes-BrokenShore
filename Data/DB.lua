@@ -51,46 +51,6 @@ DB.points = {
 	--]]
 	[mapFile(1021)] = {
 		-- /////////////////////////////////
-		-- entrance
-		-- /////////////////////////////////
-		[39236010] = {
-			label = format(L["Entrance of %s"], BZ["Stonefin Shoals"]),
-			entrance = true,
-		},
-		[45456709] = {
-			label = format(L["Entrance of %s"], BZ["The Pit of Agony"]),
-			entrance = true,
-		},
-		[55206304] = {
-			label = format(L["Entrance of %s"], BZ["Maw of Corruption"]),
-			entrance = true,
-		},
-		[76513982] = {
-			label = format(L["Entrance of %s"], BZ["The Lost Temple"]),
-			entrance = true,
-		},
-		[66633456] = {
-			label = format(L["Entrance of %s"], BZ["Felsworn Vault"]),
-			entrance = true,
-		},
-		[39713002] = {
-			label = format(L["Entrance of %s"], BZ["Blood Nest"]),
-			entrance = true,
-		},
-		[51421720] = {
-			label = L["Entrance"],
-			entrance = true,
-		},
-		[56162724] = {
-			label = format(L["Entrance of %s"], BZ["Felbreach Hollow"]),
-			entrance = true,
-		},
-		[58555401] = {
-			label = format(L["Entrance of %s"], BZ["Feldust Cavern"]),
-			entrance = true,
-		},
-		
-		-- /////////////////////////////////
 		-- ramp
 		-- /////////////////////////////////
 		[67843399] = {
@@ -159,10 +119,10 @@ DB.points = {
 	},
 }
 
+-- /////////////////////////////////
+-- Veiled Wyrmtongue Chest
+-- /////////////////////////////////
 DB.treasures = {
-	-- /////////////////////////////////
-	-- Veiled Wyrmtongue Chest
-	-- /////////////////////////////////
 	[43364692] = { }, 
 	[48901870] = { }, 
 	[53401940] = { }, 
@@ -263,6 +223,7 @@ DB.treasures = {
 	[48273706] = { },
 	[28506050] = { },
 	[57235293] = { },
+	[60985844] = { },
 	[58005611] = { note=format(L["Inside %s"], BZ["Feldust Cavern"]) }, 
 	[58155875] = { note=format(L["Inside %s"], BZ["Maw of Corruption"]) }, 
 }
@@ -272,10 +233,10 @@ for k, v in pairs(DB.treasures) do
 	DB.points[mapFile(1021)][k]["treasure"] = true
 end
 
+-- /////////////////////////////////
+-- rare mobs
+-- /////////////////////////////////
 DB.rares = {
-	-- /////////////////////////////////
-	-- rare mobs
-	-- /////////////////////////////////
 	[57085649] = { npc = 117096, quest = 46094, label = L["Potionmaster Gloop"], },
 	[60474504] = { npc = 119718, quest = 46313, label = L["Imp Mother Bruva"], },
 	[78322747] = { npc = 121134, quest = 47036, label = L["Duke Sithizi"], },
@@ -309,3 +270,50 @@ for k, v in pairs(DB.rares) do
 	DB.points[mapFile(1021)][k]["rare"] = true
 end
 
+-- /////////////////////////////////
+-- Entrance
+-- /////////////////////////////////
+DB.entrances = {
+	[39236010] = { label = format(L["Entrance of %s"], BZ["Stonefin Shoals"]), },
+	[45456709] = { label = format(L["Entrance of %s"], BZ["The Pit of Agony"]), },
+	[55206304] = { label = format(L["Entrance of %s"], BZ["Maw of Corruption"]), },
+	[76513982] = { label = format(L["Entrance of %s"], BZ["The Lost Temple"]), },
+	[66633456] = { label = format(L["Entrance of %s"], BZ["Felsworn Vault"]), },
+	[39713002] = { label = format(L["Entrance of %s"], BZ["Blood Nest"]), },
+	[51421720] = { label = L["Entrance"], },
+	[56162724] = { label = format(L["Entrance of %s"], BZ["Felbreach Hollow"]), },
+	[58555401] = { label = format(L["Entrance of %s"], BZ["Feldust Cavern"]), },
+}
+
+for k, v in pairs(DB.entrances) do
+	DB.points[mapFile(1021)][k] = v
+	DB.points[mapFile(1021)][k]["entrance"] = true
+end
+
+-- /////////////////////////////////
+-- Ancient Shrine
+-- /////////////////////////////////
+DB.shrines = {
+	[39926032] = { note=format(L["Inside %s"], BZ["Stonefin Shoals"]) },
+	[33476083] = { },
+	[56046540] = { },
+	[46006952] = { },
+	[40006731] = { },
+	[63015318] = { },
+	[61324055] = { },
+	[45931523] = { },
+	[55992764] = { },
+	[67844458] = { },
+	[73943866] = { },
+	[79762779] = { },
+}
+
+for k, v in pairs(DB.shrines) do
+	DB.points[mapFile(1021)][k] = v
+	--DB.points[mapFile(1021)][k]["label"] = L["Ancient Shrine"]
+	DB.points[mapFile(1021)][k]["shrine"] = true
+	DB.points[mapFile(1021)][k]["type"] = "greenButton"
+	DB.points[mapFile(1021)][k]["object"] = 268435
+	DB.points[mapFile(1021)][k]["spell"] = 239933
+	DB.points[mapFile(1021)][k]["scale"] = 0.7
+end

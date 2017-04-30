@@ -39,14 +39,15 @@ constants.defaults = {
 }
 
 constants.icon_texture = {
-	flight = "Interface\\MINIMAP\\TRACKING\\FlightMaster",
-	yellowButton = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\YellowButton",
-	mission = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\Mission",
-	portal = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\Portal",
-	treasure = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\treasure",
-	entrance = "Interface\\MINIMAP\\Suramar_Door_Icon",
-	ramp = "Interface\\MINIMAP\\MiniMap-VignetteArrow",
-	rare = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\Skull",
+	flight 		= "Interface\\MINIMAP\\TRACKING\\FlightMaster",
+	entrance 	= "Interface\\MINIMAP\\Suramar_Door_Icon",
+	ramp 		= "Interface\\MINIMAP\\MiniMap-VignetteArrow",
+	greenButton 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\GreenButton",
+	yellowButton 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\YellowButton",
+	mission 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\Mission",
+	portal 		= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\Portal",
+	treasure 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\treasure",
+	rare 		= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\Skull",
 }
 
 -- Define the default icon here

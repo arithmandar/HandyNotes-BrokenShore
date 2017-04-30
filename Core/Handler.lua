@@ -87,11 +87,17 @@ local function handle_tooltip(tooltip, point, coord)
 local function handle_tooltip(tooltip, point)
 --@end-non-debug@]===]
 	if point then
-		if point.label then
+		if (point.label) then
 			if (point.npc and private.db.query_server) then
 				tooltip:SetHyperlink(("unit:Creature-0-0-0-0-%d"):format(point.npc))
 			else
 				tooltip:AddLine(point.label)
+			end
+		end
+		if (point.spell) then
+			local spellName = GetSpellInfo(point.spell)
+			if (spellName) then
+				tooltip:AddLine(spellName, 1, 1, 1, true)
 			end
 		end
 		if (point.note and private.db.show_note) then
@@ -182,6 +188,22 @@ local function addAllTreasureToWayPoint(button, mapFile)
 	end
 end
 
+local function addAllShrineToWayPoint(button, mapFile)
+	if TomTom then
+		local mapId = HandyNotes:GetMapFiletoMapID(mapFile)
+		local spellName = GetSpellInfo(239933)
+		for k, v in pairs(private.DB.shrines) do
+			local x, y = HandyNotes:getXY(k)
+			TomTom:AddMFWaypoint(mapId, nil, x, y, {
+				title = spellName,
+				persistent = nil,
+				minimap = true,
+				world = true
+			})
+		end
+	end
+end
+
 do
 	local currentZone, currentCoord
 	local function generateMenu(button, level)
@@ -206,6 +228,13 @@ do
 				wipe(info)
 
 				info.text = L["Add all treasure nodes to TomTom waypoints"]
+				info.notCheckable = 1
+				info.func = addAllTreasureToWayPoint
+				info.arg1 = currentZone
+				UIDropDownMenu_AddButton(info, level)
+				wipe(info)
+
+				info.text = L["Add all Ancient Shrine nodes to TomTom waypoints"]
 				info.notCheckable = 1
 				info.func = addAllTreasureToWayPoint
 				info.arg1 = currentZone
