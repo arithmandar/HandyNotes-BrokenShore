@@ -3,13 +3,15 @@ $Id$
 Revision History:
 =================
 
-* v1.07 (May xx, 2017)
+* v1.07 (May 1, 2017)
 -----------------------
 - Added new treasure chest's location
 - Added nodes of Ancient Shrine
 - Added feature to add all Ancinet Shrine nodes to TomTom Waypoint
 - Localization update:
   - Russian (BLizzatron)
+  - German (pas06)
+  - Korean (yuk6196)
 
 * v1.06 (Apr. 29, 2017)
 -----------------------
