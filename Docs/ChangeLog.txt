@@ -3,6 +3,12 @@ $Id$
 Revision History:
 =================
 
+* v1.08 (May 2, 2017)
+-----------------------
+- Slightly adjust some of chests' coordinates
+- Added mob Corrupted Bonebreaker's associated quest ID and remove it 
+  from Bonegnasher the Petrifying
+
 * v1.07 (May 1, 2017)
 -----------------------
 - Added new treasure chest's location
