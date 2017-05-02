@@ -34,6 +34,8 @@ L["Wyrmtongue Chest"] = "Wyrmtongue Chest"
 L["Show possible spawning location of Veiled Wyrmtongue Chest."] = "Show possible spawning location of Veiled Wyrmtongue Chest."
 L["Ancient Shrine"] = "Ancient Shrine"
 L["Show Ancient Shrine's locations."] = "Show Ancient Shrine's locations."
+L["Smoldering Infernal Core"] = "Smoldering Infernal Core"
+L["Show Smoldering Infernal Core's locations."] = "Show Smoldering Infernal Core's locations."
 L["Others"] = "Others"
 L["Show all the other misc nodes."] = "Show all the other misc nodes."
 -- AddOn Settings

@@ -93,7 +93,13 @@ config.options = {
 					type = "toggle",
 					name = L["Ancient Shrine"],
 					desc = L["Show Ancient Shrine's locations."],
-					order = 13,
+					order = 14,
+				},
+				show_shrine = {
+					type = "toggle",
+					name = L["Smoldering Infernal Core"],
+					desc = L["Show Smoldering Infernal Core's locations."],
+					order = 15,
 				},
 				show_others = {
 					type = "toggle",

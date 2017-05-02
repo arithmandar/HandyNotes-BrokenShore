@@ -8,6 +8,7 @@ Revision History:
 - Slightly adjust some of chests' coordinates
 - Added mob Corrupted Bonebreaker's associated quest ID and remove it 
   from Bonegnasher the Petrifying
+- Added nodes for Infernal Core
 
 * v1.07 (May 1, 2017)
 -----------------------

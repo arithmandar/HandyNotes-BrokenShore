@@ -318,6 +318,9 @@ do
 		if (point.shrine and not private.db.show_shrine) then
 			return false
 		end
+		if (point.infernalCore and not private.db.show_infernalCores) then
+			return false
+		end
 		if (point.level and point.level ~= currentLevel) then
 			return false
 		end

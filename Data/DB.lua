@@ -317,3 +317,24 @@ for k, v in pairs(DB.shrines) do
 	DB.points[mapFile(1021)][k]["spell"] = 239933
 	DB.points[mapFile(1021)][k]["scale"] = 0.7
 end
+
+-- /////////////////////////////////
+-- Smoldering Infernal Core
+-- /////////////////////////////////
+DB.infernalCores = {
+	[41524993] = { },
+	[33952901] = { },
+	[36542880] = { },
+	[46263981] = { },
+	[46425318] = { },
+	[52833097] = { },
+	[47625761] = { },
+}
+
+for k, v in pairs(DB.infernalCores) do
+	DB.points[mapFile(1021)][k] = v
+	DB.points[mapFile(1021)][k]["infernalCore"] = true
+	DB.points[mapFile(1021)][k]["type"] = "redButton"
+	DB.points[mapFile(1021)][k]["spell"] = 193713
+	DB.points[mapFile(1021)][k]["scale"] = 0.7
+end
