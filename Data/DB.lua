@@ -125,7 +125,7 @@ DB.points = {
 DB.treasures = {
 	[43364692] = { }, 
 	[48881860] = { }, 
-	[53401940] = { }, 
+	[53321945] = { }, 
 	[31113202] = { }, 
 	[32903227] = { }, 
 	[30923319] = { }, 
@@ -164,13 +164,13 @@ DB.treasures = {
 	[62003910] = { }, 
 	[64704550] = { }, 
 	[57434353] = { }, 
-	[52104140] = { }, 
+	[52024150] = { }, 
 	[53674568] = { }, 
 	[46054346] = { }, 
 	[45784677] = { }, 
 	[47494687] = { }, 
 	[46175067] = { }, 
-	[43505220] = { }, 
+	[43545217] = { }, 
 	[61404996] = { }, 
 	[63215176] = { }, 
 	[62855389] = { }, 
@@ -257,7 +257,7 @@ DB.rares = {
 	[59692724] = { npc = 117141, quest = 46090, label = L["Malgrazoth"], note = format(L["Inside %s"], BZ["Felbreach Hollow"]), alpha = 0.4 },
 	[54027882] = { npc = 121016, quest = 46953, label = L["Aqueux"], },
 	[65233182] = { npc = 117140, quest = 46091, label = L["Salethan the Broodwalker"], hide_indoor = true,},
-	[54564848] = { npc = 120968, label = L["Bonegnasher the Petrifying"] }, 
+	-- [54564848] = { npc = 120968, label = L["Bonegnasher the Petrifying"] }, 
 	[40348045] = { npc = 118993, quest = 46202, label = L["Dreadeye"], },
 	[49114800] = { npc = 117090, quest = 46100, label = L["Xorogun the Flamecarver"], },
 	[42404282] = { npc = 117094, quest = 46092, label = L["Malorus the Soulkeeper"], },
@@ -329,6 +329,8 @@ DB.infernalCores = {
 	[46425318] = { },
 	[52833097] = { },
 	[47625761] = { },
+	[54032693] = { },
+	[57173114] = { },
 }
 
 for k, v in pairs(DB.infernalCores) do

@@ -35,6 +35,8 @@ L["Wyrmtongue Chest"] = "蟲舌魔寶箱"
 L["Show possible spawning location of Veiled Wyrmtongue Chest."] = "顯示「隱密的蟲舌魔寶箱」可能的重生點。"
 L["Ancient Shrine"] = "上古祭壇"
 L["Show Ancient Shrine's locations."] = "顯示上古祭壇的節點位置。"
+L["Smoldering Infernal Core"] = "悶燃煉獄火之核"
+L["Show Smoldering Infernal Core's locations."] = "顯示悶燃煉獄火之核的節點位置。"
 L["Others"] = "其他"
 L["Show all the other misc nodes."] = "顯示所有其他雜項節點。"
 -- AddOn Settings
