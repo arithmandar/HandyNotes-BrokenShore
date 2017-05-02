@@ -65,6 +65,7 @@ L["Peculiar Rope"] = "Peculiar Rope"
 L["Veiled Wyrmtongue Chest"] = "Veiled Wyrmtongue Chest"
 L["Add all treasure nodes to TomTom waypoints"] = "Add all treasure nodes to TomTom waypoints"
 L["Add all Ancient Shrine nodes to TomTom waypoints"] = "Add all Ancient Shrine nodes to TomTom waypoints"
+L["the cave in Stonefin Shoals"] = "the cave in Stonefin Shoals"
 
 --@end-do-not-package@
 --@localization(locale="enUS", format="lua_additive_table")@

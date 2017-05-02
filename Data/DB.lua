@@ -169,7 +169,7 @@ DB.treasures = {
 	[46054346] = { }, 
 	[45784677] = { }, 
 	[47494687] = { }, 
-	[46205060] = { }, 
+	[46175067] = { }, 
 	[43505220] = { }, 
 	[61404996] = { }, 
 	[63215176] = { }, 
@@ -181,7 +181,7 @@ DB.treasures = {
 	[50805970] = { }, 
 	[39045828] = { }, 
 	[37806130] = { }, 
-	[40126099] = { note=format(L["Inside %s"], BZ["Stonefin Shoals"]) },
+	[40126099] = { note=format(L["Inside %s"], L["the cave in Stonefin Shoals"]) },
 	[42796199] = { note=format(L["Inside %s"], BZ["The Pit of Agony"]) }, 
 	[45906380] = { hide_indoor = true, }, 
 	[47306700] = { hide_indoor = true, }, 
@@ -214,7 +214,7 @@ DB.treasures = {
 	[89634694] = { },
 	[61424307] = { },
 	[49804650] = { },
-	[50504990] = { },
+	[50324989] = { },
 	[42004277] = { },
 	[38613456] = { note=format(L["Inside %s"], BZ["Blood Nest"]),},
 	[41373654] = { },
@@ -274,7 +274,7 @@ end
 -- Entrance
 -- /////////////////////////////////
 DB.entrances = {
-	[39236010] = { label = format(L["Entrance of %s"], BZ["Stonefin Shoals"]), },
+	[39236010] = { label = format(L["Entrance of %s"], L["the cave in Stonefin Shoals"]), },
 	[45456709] = { label = format(L["Entrance of %s"], BZ["The Pit of Agony"]), },
 	[55206304] = { label = format(L["Entrance of %s"], BZ["Maw of Corruption"]), },
 	[76513982] = { label = format(L["Entrance of %s"], BZ["The Lost Temple"]), },
@@ -294,7 +294,7 @@ end
 -- Ancient Shrine
 -- /////////////////////////////////
 DB.shrines = {
-	[39926032] = { note=format(L["Inside %s"], BZ["Stonefin Shoals"]) },
+	[39926032] = { note=format(L["Inside %s"], L["the cave in Stonefin Shoals"]) },
 	[33476083] = { },
 	[56046540] = { },
 	[46006952] = { },
