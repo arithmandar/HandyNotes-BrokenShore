@@ -72,6 +72,8 @@ L["the cave in Stonefin Shoals"] = "石鰭海岸的洞穴"
 L["Ancient Tomb"] = "古墓"
 L["Inside the ship"] = "在船艦裡面"
 L["Inside the ship, on the middle deck"] = "在船艦裡面，中間甲板"
+L["On top of the tower"] = "在塔頂"
+L["Inside the tower"] = "在塔裡"
 
 --@end-do-not-package@
 --@localization(locale="zhTW", format="lua_additive_table")@

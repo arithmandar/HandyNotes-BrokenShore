@@ -71,6 +71,8 @@ L["the cave in Stonefin Shoals"] = "the cave in Stonefin Shoals"
 L["Ancient Tomb"] = "Ancient Tomb"
 L["Inside the ship"] = "Inside the ship"
 L["Inside the ship, on the middle deck"] = "Inside the ship, on the middle deck"
+L["On top of the tower"] = "On top of the tower"
+L["Inside the tower"] = "Inside the tower"
 
 --@end-do-not-package@
 --@localization(locale="enUS", format="lua_additive_table")@

@@ -116,6 +116,13 @@ DB.points = {
 			icon = private.constants.icon_texture["yellowButton"],
 			scale = 0.6,
 		},
+		[46402066] = {
+			npc = 117950,
+			label = L["Madam Viciosa <Master Pet Tamer>"],
+			others = true,
+			icon = private.constants.icon_texture["yellowButton"],
+			scale = 0.6
+		},
 	},
 }
 
@@ -161,7 +168,7 @@ DB.treasures = {
 	[36542434] = { }, 
 	[44603350] = { }, 
 	[47593475] = { }, 
-	[62003910] = { }, 
+	[62003910] = { note=L["Inside the tower"] }, 
 	[64704550] = { }, 
 	[57434353] = { }, 
 	[52024150] = { }, 
@@ -203,7 +210,7 @@ DB.treasures = {
 	[84556563] = { },
 	[30106690] = { },
 	[30665770] = { },
-	[41941575] = { },
+	[41941575] = { note=L["On top of the tower"] },
 	[57051408] = { },
 	[68785685] = { },
 	[50018531] = { },

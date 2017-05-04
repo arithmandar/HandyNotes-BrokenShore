@@ -7,8 +7,12 @@ Revision History:
 -----------------------
 - Added new treasure nodes
 - Added treasure node's location note
-- Change icon path to use MINIMAP's icon texture
-- Change treasure icon to use MINIMAP's icon texture to improve the minimap display quality
+- Changed icon path to use MINIMAP's icon texture
+- Changed treasure icon to use MINIMAP's icon texture to improve the minimap display quality
+- Added location of Madam Viciosa <Master Pet Tamer>
+- Localization update:
+  - Russian (BLizzatron)
+  - German (Sunflow72)
 
 * v1.09 (May 4, 2017)
 -----------------------
