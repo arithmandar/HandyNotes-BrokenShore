@@ -236,7 +236,7 @@ do
 
 				info.text = L["Add all Ancient Shrine nodes to TomTom waypoints"]
 				info.notCheckable = 1
-				info.func = addAllTreasureToWayPoint
+				info.func = addAllShrineToWayPoint
 				info.arg1 = currentZone
 				UIDropDownMenu_AddButton(info, level)
 				wipe(info)

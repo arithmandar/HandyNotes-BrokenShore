@@ -126,14 +126,14 @@ DB.treasures = {
 	[43364692] = { }, 
 	[48881860] = { }, 
 	[53321945] = { }, 
-	[31113202] = { }, 
+	[31113202] = { }, -- Hidden Wyrmtongue Cache
 	[32903227] = { }, 
 	[30923319] = { }, 
 	[30904960] = { }, 
 	[33805400] = { }, 
 	[85782973] = { }, 
 	[82343119] = { }, 
-	[74702980] = { }, 
+	[74642968] = { }, -- Hidden Wyrmtongue Cache 
 	[70733176] = { }, 
 	[69423801] = { }, 
 	[67894206] = { }, 
@@ -160,7 +160,7 @@ DB.treasures = {
 	[52302990] = { }, 
 	[36542434] = { }, 
 	[44603350] = { }, 
-	[47603470] = { }, 
+	[47593475] = { }, 
 	[62003910] = { }, 
 	[64704550] = { }, 
 	[57434353] = { }, 
@@ -199,7 +199,7 @@ DB.treasures = {
 	[37934293] = { },
 	[29486004] = { },
 	[58897297] = { },
-	[67326740] = { },
+	[67326740] = { }, -- Hidden Wyrmtongue Cache
 	[84556563] = { },
 	[30106690] = { },
 	[30665770] = { },
@@ -280,7 +280,7 @@ DB.entrances = {
 	[76513982] = { label = format(L["Entrance of %s"], BZ["The Lost Temple"]), },
 	[66633456] = { label = format(L["Entrance of %s"], BZ["Felsworn Vault"]), },
 	[39713002] = { label = format(L["Entrance of %s"], BZ["Blood Nest"]), },
-	[51421720] = { label = L["Entrance"], },
+	[51421720] = { label = format(L["Entrance of %s"], L["Ancient Tomb"]), object = 267640, },
 	[56162724] = { label = format(L["Entrance of %s"], BZ["Felbreach Hollow"]), },
 	[58555401] = { label = format(L["Entrance of %s"], BZ["Feldust Cavern"]), },
 }
@@ -306,6 +306,7 @@ DB.shrines = {
 	[67844458] = { },
 	[73943866] = { },
 	[79762779] = { },
+	[54631864] = { },
 }
 
 for k, v in pairs(DB.shrines) do

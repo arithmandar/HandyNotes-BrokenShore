@@ -33,8 +33,8 @@ L["Rare mobs"] = "稀有怪"
 L["Show rare mobs' location even if any of them has not yet spawned."] = "顯示稀有菁英怪的節點，即便他們還沒重生。"
 L["Wyrmtongue Chest"] = "蟲舌魔寶箱"
 L["Show possible spawning location of Veiled Wyrmtongue Chest."] = "顯示「隱密的蟲舌魔寶箱」可能的重生點。"
-L["Ancient Shrine"] = "上古祭壇"
-L["Show Ancient Shrine's locations."] = "顯示上古祭壇的節點位置。"
+L["Ancient Shrine"] = "上古聖壇"
+L["Show Ancient Shrine's locations."] = "顯示上古聖壇的節點位置。"
 L["Smoldering Infernal Core"] = "悶燃煉獄火之核"
 L["Show Smoldering Infernal Core's locations."] = "顯示悶燃煉獄火之核的節點位置。"
 L["Others"] = "其他"
@@ -69,6 +69,7 @@ L["Veiled Wyrmtongue Chest"] = "隱密的蟲舌魔寶箱"
 L["Add all treasure nodes to TomTom waypoints"] = "將所有的寶箱節點加到 TomTom 路徑上"
 L["Add all Ancient Shrine nodes to TomTom waypoints"] = "將所有的上古聖壇節點加到 TomTom 路徑上"
 L["the cave in Stonefin Shoals"] = "石鰭海岸的洞穴"
+L["Ancient Tomb"] = "古墓"
 
 --@end-do-not-package@
 --@localization(locale="zhTW", format="lua_additive_table")@
