@@ -70,6 +70,8 @@ L["Add all treasure nodes to TomTom waypoints"] = "將所有的寶箱節點加�
 L["Add all Ancient Shrine nodes to TomTom waypoints"] = "將所有的上古聖壇節點加到 TomTom 路徑上"
 L["the cave in Stonefin Shoals"] = "石鰭海岸的洞穴"
 L["Ancient Tomb"] = "古墓"
+L["Inside the ship"] = "在船艦裡面"
+L["Inside the ship, on the middle deck"] = "在船艦裡面，中間甲板"
 
 --@end-do-not-package@
 --@localization(locale="zhTW", format="lua_additive_table")@

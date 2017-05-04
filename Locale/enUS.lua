@@ -69,6 +69,8 @@ L["Add all treasure nodes to TomTom waypoints"] = "Add all treasure nodes to Tom
 L["Add all Ancient Shrine nodes to TomTom waypoints"] = "Add all Ancient Shrine nodes to TomTom waypoints"
 L["the cave in Stonefin Shoals"] = "the cave in Stonefin Shoals"
 L["Ancient Tomb"] = "Ancient Tomb"
+L["Inside the ship"] = "Inside the ship"
+L["Inside the ship, on the middle deck"] = "Inside the ship, on the middle deck"
 
 --@end-do-not-package@
 --@localization(locale="enUS", format="lua_additive_table")@

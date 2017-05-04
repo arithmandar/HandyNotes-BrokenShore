@@ -44,14 +44,29 @@ constants.icon_texture = {
 	flight 		= "Interface\\MINIMAP\\TRACKING\\FlightMaster",
 	entrance 	= "Interface\\MINIMAP\\Suramar_Door_Icon",
 	ramp 		= "Interface\\MINIMAP\\MiniMap-VignetteArrow",
-	greenButton 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\GreenButton",
-	blueButton 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\BlueButton",
-	redButton 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\RedButton",
-	yellowButton 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\YellowButton",
-	mission 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\Mission",
-	portal 		= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\Portal",
-	treasure 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\treasure",
-	rare 		= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\Skull",
+	greenButton 	= { 
+		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		tCoordLeft = 0.5, tCoordRight = 0.625, tCoordTop = 0, tCoordBottom = 0.125 },
+	blueButton 	= {
+		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		tCoordLeft = 0.125, tCoordRight = 0.25, tCoordTop = 0, tCoordBottom = 0.125 },
+	redButton 	= {
+		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		tCoordLeft = 0.25, tCoordRight = 0.375, tCoordTop = 0, tCoordBottom = 0.125 },
+	yellowButton 	= {
+		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		tCoordLeft = 0.125, tCoordRight = 0.25, tCoordTop = 0.5, tCoordBottom = 0.625 },
+	portal 		= {
+		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		tCoordLeft = 0.125, tCoordRight = 0.25, tCoordTop = 0.875, tCoordBottom = 1 },
+	rare 		= {
+		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		tCoordLeft = 0.875, tCoordRight = 1, tCoordTop = 0.75, tCoordBottom = 0.875 },
+	--treasure 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\treasure",
+	treasure	= {
+		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		tCoordLeft = 0.25, tCoordRight = 0.375, tCoordTop = 0.625, tCoordBottom = 0.75 },
+
 }
 
 -- Define the default icon here

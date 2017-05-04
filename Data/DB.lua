@@ -129,8 +129,8 @@ DB.treasures = {
 	[31113202] = { }, -- Hidden Wyrmtongue Cache
 	[32903227] = { }, 
 	[30923319] = { }, 
-	[30904960] = { }, 
-	[33805400] = { }, 
+	[30894949] = { note = L["Inside the ship"] }, 
+	[33885395] = { note = L["Inside the ship, on the middle deck"] }, 
 	[85782973] = { }, 
 	[82343119] = { }, 
 	[74642968] = { }, -- Hidden Wyrmtongue Cache 
@@ -209,7 +209,7 @@ DB.treasures = {
 	[50018531] = { },
 	[40657288] = { },
 	[41996717] = { note=format(L["Inside %s"], BZ["The Pit of Agony"]) }, 
-	[49087396] = { },
+	[49087396] = { note = L["Inside the ship"] }, 
 	[90555868] = { },
 	[89634694] = { },
 	[61424307] = { },
@@ -226,6 +226,7 @@ DB.treasures = {
 	[60985844] = { },
 	[58005611] = { note=format(L["Inside %s"], BZ["Feldust Cavern"]) }, 
 	[58155875] = { note=format(L["Inside %s"], BZ["Maw of Corruption"]) }, 
+	[41105122] = { },
 }
 
 for k, v in pairs(DB.treasures) do
