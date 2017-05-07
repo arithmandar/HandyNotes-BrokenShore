@@ -3,7 +3,7 @@ $Id$
 Revision History:
 =================
 
-* v1.10 (May xx, 2017)
+* v1.10 (May 07, 2017)
 -----------------------
 - Added new treasure nodes
 - Added treasure node's location note
@@ -13,6 +13,7 @@ Revision History:
 - Localization update:
   - Russian (BLizzatron)
   - German (Sunflow72)
+  - Korean (yuk6196)
 
 * v1.09 (May 4, 2017)
 -----------------------
