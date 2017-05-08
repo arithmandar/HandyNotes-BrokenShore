@@ -3,6 +3,11 @@ $Id$
 Revision History:
 =================
 
+* v1.11 (May xx, 2017)
+-----------------------
+- Copy MINIMAP\OBJECTICONS texture file to local to prevent from 
+  customized texture messing up the icon display
+
 * v1.10 (May 07, 2017)
 -----------------------
 - Added new treasure nodes

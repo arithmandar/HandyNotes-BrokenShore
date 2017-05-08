@@ -24,12 +24,12 @@ local AceDB = LibStub("AceDB-3.0")
 
 local HandyNotes = LibStub("AceAddon-3.0"):GetAddon("HandyNotes")
 local addon = LibStub("AceAddon-3.0"):NewAddon(private.addon_name, "AceEvent-3.0")
-addon.constants = private.constants;
-addon.constants.addon_name = private.addon_name;
+addon.constants = private.constants
+addon.constants.addon_name = private.addon_name
 
-addon.descName = L["HandyNotes - Broken Shore"]
-addon.description = L["Shows the POIs in Broken Shore"]
-addon.pluginName = L["Broken Shore"]
+addon.descName 		= private.descName
+addon.description 	= private.description
+addon.pluginName 	= private.pluginName
 
 addon.Name = FOLDER_NAME;
 _G.HandyNotes_BrokenShore = addon;

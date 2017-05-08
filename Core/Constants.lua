@@ -13,6 +13,9 @@ private.addon_name = "HandyNotes_BrokenShore"
 
 local LibStub = _G.LibStub
 local L = LibStub("AceLocale-3.0"):GetLocale(private.addon_name)
+private.descName = L["HandyNotes - Broken Shore"]
+private.description = L["Shows the POIs in Broken Shore"]
+private.pluginName = L["Broken Shore"]
 
 local constants = {}
 private.constants = constants
@@ -45,26 +48,26 @@ constants.icon_texture = {
 	entrance 	= "Interface\\MINIMAP\\Suramar_Door_Icon",
 	ramp 		= "Interface\\MINIMAP\\MiniMap-VignetteArrow",
 	greenButton 	= { 
-		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
 		tCoordLeft = 0.5, tCoordRight = 0.625, tCoordTop = 0, tCoordBottom = 0.125 },
 	blueButton 	= {
-		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
 		tCoordLeft = 0.125, tCoordRight = 0.25, tCoordTop = 0, tCoordBottom = 0.125 },
 	redButton 	= {
-		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
 		tCoordLeft = 0.25, tCoordRight = 0.375, tCoordTop = 0, tCoordBottom = 0.125 },
 	yellowButton 	= {
-		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
 		tCoordLeft = 0.125, tCoordRight = 0.25, tCoordTop = 0.5, tCoordBottom = 0.625 },
 	portal 		= {
-		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
 		tCoordLeft = 0.125, tCoordRight = 0.25, tCoordTop = 0.875, tCoordBottom = 1 },
 	rare 		= {
-		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
 		tCoordLeft = 0.875, tCoordRight = 1, tCoordTop = 0.75, tCoordBottom = 0.875 },
 	--treasure 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\treasure",
 	treasure	= {
-		icon = "Interface\\MINIMAP\\OBJECTICONS",
+		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
 		tCoordLeft = 0.25, tCoordRight = 0.375, tCoordTop = 0.625, tCoordBottom = 0.75 },
 
 }
