@@ -3,7 +3,7 @@ $Id$
 Revision History:
 =================
 
-* v1.11 (May xx, 2017)
+* v1.11 (May 08, 2017)
 -----------------------
 - Copy MINIMAP\OBJECTICONS texture file to local to prevent from 
   customized texture messing up the icon display
