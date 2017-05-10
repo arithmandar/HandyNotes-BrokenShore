@@ -33,6 +33,7 @@ constants.defaults = {
 		show_treasure = true,
 		show_shrine = true,
 		show_infernalCores = true,
+		show_tamer = true,
 		ignore_InOutDoor = false,
 		hide_completed = true,
 	},

@@ -322,6 +322,9 @@ do
 		if (point.infernalCore and not private.db.show_infernalCores) then
 			return false
 		end
+		if (point.tamer and not private.db.show_tamer) then
+			return false
+		end
 		if (point.level and point.level ~= currentLevel) then
 			return false
 		end

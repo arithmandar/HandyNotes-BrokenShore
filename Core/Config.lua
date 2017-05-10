@@ -101,6 +101,12 @@ config.options = {
 					desc = L["Show Smoldering Infernal Core's locations."],
 					order = 15,
 				},
+				show_tamer = {
+					type = "toggle",
+					name = SHOW_PET_BATTLES_ON_MAP_TEXT,
+					desc = L["Show Master Pet Tamer's location."],
+					order = 16,
+				},
 				show_others = {
 					type = "toggle",
 					name = L["Others"],

@@ -119,8 +119,25 @@ DB.points = {
 		[46402066] = {
 			npc = 117950,
 			label = L["Madam Viciosa <Master Pet Tamer>"],
-			others = true,
-			icon = private.constants.icon_texture["yellowButton"],
+			note = format("%s, %s, %s", BATTLE_PET_DAMAGE_NAME_1, BATTLE_PET_DAMAGE_NAME_6, BATTLE_PET_DAMAGE_NAME_1),
+			tamer = true,
+			icon = private.constants.icon_texture["blueButton"],
+			scale = 0.6
+		},
+		[39487197] = {
+			npc = 117951,
+			label = L["Nameless Mystic <Master Pet Tamer>"],
+			note = format("%s, %s, %s", BATTLE_PET_DAMAGE_NAME_6, BATTLE_PET_DAMAGE_NAME_6, BATTLE_PET_DAMAGE_NAME_7),
+			tamer = true,
+			icon = private.constants.icon_texture["blueButton"],
+			scale = 0.6
+		},
+		[70004761] = {
+			npc = 117934,
+			label = L["Sissix <Master Pet Tamer>"],
+			note = format("%s, %s, %s", BATTLE_PET_DAMAGE_NAME_7, BATTLE_PET_DAMAGE_NAME_9, BATTLE_PET_DAMAGE_NAME_4),
+			tamer = true,
+			icon = private.constants.icon_texture["blueButton"],
 			scale = 0.6
 		},
 	},
