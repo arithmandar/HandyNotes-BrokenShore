@@ -158,7 +158,7 @@ local function hideNode(button, mapFile, coord)
 end
 
 local function closeAllDropdowns()
-	CloseDropDownMenus(1)
+	Lib_CloseDropDownMenus(1)
 end
 
 local function addTomTomWaypoint(button, mapFile, coord)
@@ -209,56 +209,54 @@ do
 	local currentZone, currentCoord
 	local function generateMenu(button, level)
 		if (not level) then return end
-		wipe(info)
 		if (level == 1) then
 			-- Create the title of the menu
-			info.isTitle	  = 1
-			info.text		 = "HandyNotes - " ..L["PLUGIN_NAME"]
-			info.notCheckable = 1
-			UIDropDownMenu_AddButton(info, level)
-			wipe(info)
+			info = Lib_UIDropDownMenu_CreateInfo()
+			info.isTitle 		= 1
+			info.text 		= "HandyNotes - " ..L["PLUGIN_NAME"]
+			info.notCheckable 	= 1
+			Lib_UIDropDownMenu_AddButton(info, level)
 
 			if TomTom then
 				-- Waypoint menu item
+				info = Lib_UIDropDownMenu_CreateInfo()
 				info.text = LH["Add this location to TomTom waypoints"]
 				info.notCheckable = 1
 				info.func = addTomTomWaypoint
 				info.arg1 = currentZone
 				info.arg2 = currentCoord
-				UIDropDownMenu_AddButton(info, level)
-				wipe(info)
+				Lib_UIDropDownMenu_AddButton(info, level)
 
+				info = Lib_UIDropDownMenu_CreateInfo()
 				info.text = L["Add all treasure nodes to TomTom waypoints"]
 				info.notCheckable = 1
 				info.func = addAllTreasureToWayPoint
 				info.arg1 = currentZone
-				UIDropDownMenu_AddButton(info, level)
-				wipe(info)
+				Lib_UIDropDownMenu_AddButton(info, level)
 
+				info = Lib_UIDropDownMenu_CreateInfo()
 				info.text = L["Add all Ancient Shrine nodes to TomTom waypoints"]
 				info.notCheckable = 1
 				info.func = addAllShrineToWayPoint
 				info.arg1 = currentZone
-				UIDropDownMenu_AddButton(info, level)
-				wipe(info)
-
+				Lib_UIDropDownMenu_AddButton(info, level)
 			end
 
-			 -- Hide menu item
-			info.text		 = HIDE 
-			info.notCheckable = 1
-			info.func		 = hideNode
-			info.arg1		 = currentZone
-			info.arg2		 = currentCoord
-			UIDropDownMenu_AddButton(info, level)
-			wipe(info)
+			-- Hide menu item
+			info = Lib_UIDropDownMenu_CreateInfo()
+			info.text		= HIDE 
+			info.notCheckable 	= 1
+			info.func		= hideNode
+			info.arg1		= currentZone
+			info.arg2		= currentCoord
+			Lib_UIDropDownMenu_AddButton(info, level)
 
 			-- Close menu item
-			info.text		 = CLOSE
-			info.func		 = closeAllDropdowns
-			info.notCheckable = 1
-			UIDropDownMenu_AddButton(info, level)
-			wipe(info)
+			info = Lib_UIDropDownMenu_CreateInfo()
+			info.text		= CLOSE
+			info.func		= closeAllDropdowns
+			info.notCheckable 	= 1
+			Lib_UIDropDownMenu_AddButton(info, level)
 		end
 	end
 	local HL_Dropdown = CreateFrame("Frame", private.addon_name.."DropdownMenu")
@@ -269,7 +267,7 @@ do
 		if button == "RightButton" and not down then
 			currentZone = string.gsub(mapFile, "_terrain%d+$", "")
 			currentCoord = coord
-			ToggleDropDownMenu(1, nil, HL_Dropdown, self, 0, 0)
+			Lib_ToggleDropDownMenu(1, nil, HL_Dropdown, self, 0, 0)
 		end
 	end
 end

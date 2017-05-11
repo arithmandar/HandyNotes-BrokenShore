@@ -6,6 +6,8 @@ Revision History:
 * v1.12 (May xx, 2017)
 -----------------------
 - Added Pet Tamer
+- Added new treasure points
+- Replace UIDropDown with NoTaint_UIDropDown
 - Localization update:
   - Simplified Chinese (dll32)
 
