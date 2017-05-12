@@ -72,7 +72,7 @@ local get_point_info = function(point)
 
 		local icon = work_out_texture(point)
 
-		return label, icon, point.scale, point.alpha
+		return label, icon, point.scale, point.alpha, point.dungeonLevel
 	end
 end
 
@@ -280,14 +280,14 @@ do
 		local state, value = next(t, prestate)
 		while state do -- Have we reached the end of this zone?
 			if value and private:ShouldShow(state, value, currentZone, currentLevel) then
-				local label, icon, scale, alpha = get_point_info(value)
+				local label, icon, scale, alpha, dungeonLevel = get_point_info(value)
 				scale = (scale or 1) * (icon and icon.scale or 1) * private.db.icon_scale
 				alpha = (alpha or 1) * (icon and icon.alpha or 1) * private.db.icon_alpha
-				return state, nil, icon, scale, alpha
+				return state, nil, icon, scale, alpha, dungeonLevel or 0
 			end
 			state, value = next(t, state) -- Get next data
 		end
-		return nil, nil, nil, nil
+		return nil, nil, nil, nil, nil, nil
 	end
 	function PluginHandler:GetNodes(mapFile, minimap, level)
 		currentLevel = level
@@ -323,7 +323,7 @@ do
 		if (point.tamer and not private.db.show_tamer) then
 			return false
 		end
-		if (point.level and point.level ~= currentLevel) then
+		if (point.dungeonLevel and point.dungeonLevel ~= currentLevel) then
 			return false
 		end
 		if (point.hide_indoor and not private.db.ignore_InOutDoor and IsIndoors()) then

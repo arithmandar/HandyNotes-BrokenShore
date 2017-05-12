@@ -7,9 +7,12 @@ Revision History:
 -----------------------
 - Added Pet Tamer
 - Added new treasure points
-- Replace UIDropDown with NoTaint_UIDropDown
+- Replaced UIDropDown with NoTaint_UIDropDown
+- Revised iter function to return dungeonLevel value
 - Localization update:
   - Simplified Chinese (dll32)
+  - Korean (yuk6196)
+  - Russian (BLizzatron)
 
 * v1.11 (May 08, 2017)
 -----------------------
