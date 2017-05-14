@@ -3,12 +3,13 @@ $Id$
 Revision History:
 =================
 
-* v1.12 (May xx, 2017)
+* v1.12 (May 14, 2017)
 -----------------------
 - Added Pet Tamer
 - Added new treasure points
 - Replaced UIDropDown with NoTaint_UIDropDown
 - Revised iter function to return dungeonLevel value
+- Fixed the toggling of show infernal cores
 - Localization update:
   - Simplified Chinese (dll32)
   - Korean (yuk6196)

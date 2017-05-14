@@ -44,31 +44,33 @@ constants.defaults = {
 	},
 }
 
+local OBJECTICONS = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS"
+
 constants.icon_texture = {
 	flight 		= "Interface\\MINIMAP\\TRACKING\\FlightMaster",
 	entrance 	= "Interface\\MINIMAP\\Suramar_Door_Icon",
 	ramp 		= "Interface\\MINIMAP\\MiniMap-VignetteArrow",
 	greenButton 	= { 
-		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
+		icon = OBJECTICONS,
 		tCoordLeft = 0.5, tCoordRight = 0.625, tCoordTop = 0, tCoordBottom = 0.125 },
 	blueButton 	= {
-		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
+		icon = OBJECTICONS,
 		tCoordLeft = 0.125, tCoordRight = 0.25, tCoordTop = 0, tCoordBottom = 0.125 },
 	redButton 	= {
-		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
+		icon = OBJECTICONS,
 		tCoordLeft = 0.25, tCoordRight = 0.375, tCoordTop = 0, tCoordBottom = 0.125 },
 	yellowButton 	= {
-		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
+		icon = OBJECTICONS,
 		tCoordLeft = 0.125, tCoordRight = 0.25, tCoordTop = 0.5, tCoordBottom = 0.625 },
 	portal 		= {
-		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
+		icon = OBJECTICONS,
 		tCoordLeft = 0.125, tCoordRight = 0.25, tCoordTop = 0.875, tCoordBottom = 1 },
 	rare 		= {
-		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
+		icon = OBJECTICONS,
 		tCoordLeft = 0.875, tCoordRight = 1, tCoordTop = 0.75, tCoordBottom = 0.875 },
 	--treasure 	= "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\treasure",
 	treasure	= {
-		icon = "Interface\\AddOns\\HandyNotes_BrokenShore\\Images\\OBJECTICONS",
+		icon = OBJECTICONS,
 		tCoordLeft = 0.25, tCoordRight = 0.375, tCoordTop = 0.625, tCoordBottom = 0.75 },
 
 }

@@ -76,5 +76,5 @@ L["On top of the tower"] = "On top of the tower"
 L["Inside the tower"] = "Inside the tower"
 
 --@end-do-not-package@
---@localization(locale="enUS", format="lua_additive_table")@
+--@localization(locale="enUS", format="lua_additive_table", handle-subnamespaces="none", handle-unlocalized="ignore", namespace="")@
 end

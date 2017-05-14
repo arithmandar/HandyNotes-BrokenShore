@@ -65,5 +65,5 @@ L["Veiled Wyrmtongue Chest"] = "隐密的虫舌魔宝箱"
 L["Add all treasure nodes to TomTom waypoints"] = "将所有的宝箱节点加到 TomTom 路径上"
 
 --@end-do-not-package@
---@localization(locale="zhCN", format="lua_additive_table")@
+--@localization(locale="zhCN", format="lua_additive_table", handle-subnamespaces="none", handle-unlocalized="ignore", namespace="")@
 end
