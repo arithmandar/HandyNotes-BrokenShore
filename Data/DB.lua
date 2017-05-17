@@ -119,7 +119,7 @@ DB.points = {
 		[46402066] = {
 			npc = 117950,
 			label = L["Madam Viciosa <Master Pet Tamer>"],
-			note = format("%s, %s, %s", BATTLE_PET_DAMAGE_NAME_1, BATTLE_PET_DAMAGE_NAME_6, BATTLE_PET_DAMAGE_NAME_1),
+			note = format("%s: %s, %s, %s", SHOW_PET_BATTLES_ON_MAP_TEXT, BATTLE_PET_DAMAGE_NAME_1, BATTLE_PET_DAMAGE_NAME_6, BATTLE_PET_DAMAGE_NAME_1),
 			tamer = true,
 			icon = private.constants.icon_texture["blueButton"],
 			scale = 0.6
@@ -127,7 +127,7 @@ DB.points = {
 		[39487197] = {
 			npc = 117951,
 			label = L["Nameless Mystic <Master Pet Tamer>"],
-			note = format("%s, %s, %s", BATTLE_PET_DAMAGE_NAME_6, BATTLE_PET_DAMAGE_NAME_6, BATTLE_PET_DAMAGE_NAME_7),
+			note = format("%s: %s, %s, %s", SHOW_PET_BATTLES_ON_MAP_TEXT, BATTLE_PET_DAMAGE_NAME_6, BATTLE_PET_DAMAGE_NAME_6, BATTLE_PET_DAMAGE_NAME_7),
 			tamer = true,
 			icon = private.constants.icon_texture["blueButton"],
 			scale = 0.6
@@ -135,7 +135,7 @@ DB.points = {
 		[70004761] = {
 			npc = 117934,
 			label = L["Sissix <Master Pet Tamer>"],
-			note = format("%s, %s, %s", BATTLE_PET_DAMAGE_NAME_7, BATTLE_PET_DAMAGE_NAME_9, BATTLE_PET_DAMAGE_NAME_4),
+			note = format("%s: %s, %s, %s", SHOW_PET_BATTLES_ON_MAP_TEXT, BATTLE_PET_DAMAGE_NAME_7, BATTLE_PET_DAMAGE_NAME_9, BATTLE_PET_DAMAGE_NAME_4),
 			tamer = true,
 			icon = private.constants.icon_texture["blueButton"],
 			scale = 0.6
@@ -238,7 +238,7 @@ DB.treasures = {
 	[90555868] = { },
 	[89634694] = { },
 	[61424307] = { },
-	[49804650] = { },
+	[49844639] = { },
 	[50324989] = { },
 	[42004277] = { },
 	[38613456] = { note=format(L["Inside %s"], BZ["Blood Nest"]),},
@@ -366,4 +366,50 @@ for k, v in pairs(DB.infernalCores) do
 	DB.points[mapFile(1021)][k]["type"] = "redButton"
 	DB.points[mapFile(1021)][k]["spell"] = 193713
 	DB.points[mapFile(1021)][k]["scale"] = 0.7
+end
+
+-- /////////////////////////////////
+-- Nether Portal
+-- /////////////////////////////////
+DB.netherPortals = {
+	[54706865] = { },
+	[35875749] = { },
+	[54344098] = { }, -- malformed terror
+	[56903555] = { }, -- ruinous overlord
+	
+	[67413527] = { }, -- Toiling collector (fears constantly)
+	[61465629] = { }, -- (cave) Lambent Felhunter
+	[47006700] = { }, -- (cave)
+	[58005500] = { }, -- (cave)
+	[43594284] = { }, -- warped voidlord
+	[37494442] = { }, -- Baleful knight captain
+	[52411096] = { }, -- (crescent ruins)
+	--[57313527] = { }, -- ruinous overlord
+	--[54304035] = { }, -- malformed terror
+	[85425256] = { }, -- ruinous overfien
+	[74043414] = { }, -- Warped overlord
+	[86782758] = { }, -- Warped Voidlord
+	[74572905] = { }, -- Anomalous Observer
+	[66964341] = { },
+	
+	[36202380] = { },
+	[41804930] = { },
+	[47006750] = { },
+	[62105840] = { },
+	[57205610] = { },
+	[55602600] = { },
+	[63302640] = { },
+	[68902640] = { },
+	[62604110] = { },
+	[55304620] = { },
+	[86002700] = { },
+	[84005400] = { },
+}
+
+for k, v in pairs(DB.netherPortals) do
+	DB.points[mapFile(1021)][k] = v
+	DB.points[mapFile(1021)][k]["netherPortal"] = true
+	DB.points[mapFile(1021)][k]["type"] = "netherPortal"
+	--DB.points[mapFile(1021)][k]["spell"] = 240605
+	DB.points[mapFile(1021)][k]["npc"] = 120751
 end

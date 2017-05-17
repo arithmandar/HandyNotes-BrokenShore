@@ -107,6 +107,12 @@ config.options = {
 					desc = L["Show Master Pet Tamer's location."],
 					order = 16,
 				},
+				show_netherPortals = {
+					type = "toggle",
+					name = L["Unstable Nether Portal"],
+					desc = L["Show Unstable Nether Portal's location."],
+					order = 17,
+				},
 				show_others = {
 					type = "toggle",
 					name = L["Others"],

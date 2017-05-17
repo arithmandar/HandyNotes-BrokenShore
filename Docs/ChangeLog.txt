@@ -3,6 +3,10 @@ $Id$
 Revision History:
 =================
 
+* v1.13 (May xx, 2017)
+-----------------------
+- Added Unstable Nether Portal' locations
+
 * v1.12 (May 14, 2017)
 -----------------------
 - Added Pet Tamer
