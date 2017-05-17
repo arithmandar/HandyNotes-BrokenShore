@@ -37,6 +37,7 @@ constants.defaults = {
 		show_netherPortals = true,
 		ignore_InOutDoor = false,
 		hide_completed = true,
+		show_coords = false,
 	},
 	char = {
 		hidden = {

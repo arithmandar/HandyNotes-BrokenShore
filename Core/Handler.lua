@@ -83,8 +83,8 @@ local get_point_info = function(point)
 		end
 		if (point.netherPortal) then 
 			if not point.label then point.label = L["Unstable Nether Portal"] end
-			if not point.scale then point.scale = 1.0 end
-			if not point.alpha then point.alpha = 0.7 end
+			if not point.scale then point.scale = 1.4 end
+			if not point.alpha then point.alpha = 0.6 end
 		end
 
 		local icon = work_out_texture(point)
@@ -98,12 +98,7 @@ local get_point_info_by_coord = function(mapFile, coord)
 	return get_point_info(private.DB.points[mapFile] and private.DB.points[mapFile][coord])
 end
 
---@debug@
 local function handle_tooltip(tooltip, point, coord)
---@end-debug@
---[===[@non-debug@
-local function handle_tooltip(tooltip, point)
---@end-non-debug@]===]
 	if point then
 		if (point.label) then
 			if (point.npc and private.db.query_server) then
@@ -124,8 +119,11 @@ local function handle_tooltip(tooltip, point)
 		if (point.note and private.db.show_note) then
 			tooltip:AddLine("("..point.note..")", nil, nil, nil, true)
 		end
+		if (private.db.show_coords and coord) then
+			local x, y = HandyNotes:getXY(coord)
+			tooltip:AddLine(format("%.2f, %.2f", x*100, y*100), 1, 1, 1, true)
+		end
 --@debug@
-		tooltip:AddLine(coord, 1, 1, 1, true)
 		if (point.quest) then
 			if (IsQuestFlaggedCompleted(point.quest)) then
 				tooltip:AddDoubleLine(L["QuestID"], point.quest or UNKNOWN, 0.5, 0.5, 1, 1, 0.5, 1)
@@ -142,12 +140,7 @@ end
 
 local handle_tooltip_by_coord = function(tooltip, mapFile, coord)
 	mapFile = string.gsub(mapFile, "_terrain%d+$", "")
---@debug@
 	return handle_tooltip(tooltip, private.DB.points[mapFile] and private.DB.points[mapFile][coord], coord)
---@end-debug@
---[===[@non-debug@
-	return handle_tooltip(tooltip, private.DB.points[mapFile] and private.DB.points[mapFile][coord])
---@end-non-debug@]===]
 end
 
 -- //////////////////////////////////////////////////////////////////////////

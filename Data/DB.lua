@@ -353,9 +353,9 @@ DB.infernalCores = {
 	[33952901] = { },
 	[36542880] = { },
 	[46263981] = { },
-	[46425318] = { },
+	[46425318] = { hide_indoor = true, },
 	[52833097] = { },
-	[47625761] = { },
+	[47625761] = { hide_indoor = true, },
 	[54032693] = { },
 	[57173114] = { },
 }
@@ -372,38 +372,37 @@ end
 -- Nether Portal
 -- /////////////////////////////////
 DB.netherPortals = {
-	[54706865] = { },
+	[54756868] = { },
 	[35875749] = { },
 	[54344098] = { }, -- malformed terror
 	[56903555] = { }, -- ruinous overlord
+	[62295847] = { },
+	[66394273] = { },
+	[46946726] = { },
 	
 	[67413527] = { }, -- Toiling collector (fears constantly)
 	[61465629] = { }, -- (cave) Lambent Felhunter
-	[47006700] = { }, -- (cave)
 	[58005500] = { }, -- (cave)
 	[43594284] = { }, -- warped voidlord
 	[37494442] = { }, -- Baleful knight captain
 	[52411096] = { }, -- (crescent ruins)
-	--[57313527] = { }, -- ruinous overlord
-	--[54304035] = { }, -- malformed terror
 	[85425256] = { }, -- ruinous overfien
 	[74043414] = { }, -- Warped overlord
 	[86782758] = { }, -- Warped Voidlord
 	[74572905] = { }, -- Anomalous Observer
-	[66964341] = { },
 	
 	[36202380] = { },
 	[41804930] = { },
-	[47006750] = { },
-	[62105840] = { },
 	[57205610] = { },
 	[55602600] = { },
 	[63302640] = { },
 	[68902640] = { },
 	[62604110] = { },
 	[55304620] = { },
-	[86002700] = { },
-	[84005400] = { },
+	
+	[45027563] = { },
+	[41971776] = { },
+	
 }
 
 for k, v in pairs(DB.netherPortals) do
@@ -413,3 +412,11 @@ for k, v in pairs(DB.netherPortals) do
 	--DB.points[mapFile(1021)][k]["spell"] = 240605
 	DB.points[mapFile(1021)][k]["npc"] = 120751
 end
+
+-- /////////////////////////////////
+-- Doom Shroom
+-- /////////////////////////////////
+
+DB.shrooms = {
+	[66743705] = { },
+}

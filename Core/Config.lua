@@ -145,6 +145,12 @@ config.options = {
 					desc = L["Hide the rare elite mobs which have been killed and looted today."],
 					order = 15,
 				},
+				show_coords = {
+					type = "toggle",
+					name = L["Show coordinate"],
+					desc = L["Show node's coordinate information."],
+					order = 16,
+				},
 				unhide = {
 					type = "execute",
 					name = L["Reset hidden nodes"],

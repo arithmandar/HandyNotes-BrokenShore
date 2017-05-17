@@ -51,6 +51,8 @@ L["Hide looted mobs"] = "Hide looted mobs"
 L["Hide the rare elite mobs which have been killed and looted today."] = "Hide the rare elite mobs which have been killed and looted today."
 L["Reset hidden nodes"] = "Reset hidden nodes"
 L["Show all nodes that you manually hid by right-clicking on them and choosing \"hide\"."] = "Show all nodes that you manually hid by right-clicking on them and choosing \"hide\"."
+L["Show coordinate"] = "Show coordinate"
+L["Show node's coordinate information."] = "Show node's coordinate information."
 
 -- //////////////////////////
 -- Common

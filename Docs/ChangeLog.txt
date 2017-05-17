@@ -5,7 +5,11 @@ Revision History:
 
 * v1.13 (May xx, 2017)
 -----------------------
-- Added Unstable Nether Portal' locations
+- Added Unstable Nether Portal's locations
+- Added toggle to show node's coordinate (mostly for debugging purpose)
+- Localization update:
+  - Korean (yuk6196)
+  - Russian (BLizzatron)
 
 * v1.12 (May 14, 2017)
 -----------------------
