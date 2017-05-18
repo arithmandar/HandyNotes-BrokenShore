@@ -3,7 +3,7 @@ $Id$
 Revision History:
 =================
 
-* v1.13 (May xx, 2017)
+* v1.13 (May 18, 2017)
 -----------------------
 - Added Unstable Nether Portal's locations
 - Added toggle to show node's coordinate (mostly for debugging purpose)
