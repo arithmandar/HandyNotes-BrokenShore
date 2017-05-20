@@ -3,6 +3,13 @@ $Id$
 Revision History:
 =================
 
+* v1.14 (May 20, 2017)
+-----------------------
+- Lib update:
+  - NoTaint_UIDropDownMenu
+- Localization update:
+  - German (pas06)
+
 * v1.13 (May 18, 2017)
 -----------------------
 - Added Unstable Nether Portal's locations

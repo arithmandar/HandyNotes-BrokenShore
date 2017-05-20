@@ -270,7 +270,7 @@ do
 				Lib_UIDropDownMenu_AddButton(info, level)
 
 				info = Lib_UIDropDownMenu_CreateInfo()
-				info.text = L["Add all Nether Unstable Portal nodes to TomTom waypoints"]
+				info.text = L["Add all Unstable Nether Portal nodes to TomTom waypoints"]
 				info.notCheckable = 1
 				info.func = addAllNetherPortalToWayPoint
 				info.arg1 = currentZone
