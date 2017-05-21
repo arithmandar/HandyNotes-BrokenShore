@@ -3,6 +3,10 @@ $Id$
 Revision History:
 =================
 
+* v1.15 (May 22, 2017)
+-----------------------
+- Fixed localization key issue. 
+
 * v1.14 (May 20, 2017)
 -----------------------
 - Lib update:

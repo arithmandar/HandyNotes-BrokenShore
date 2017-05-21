@@ -241,7 +241,7 @@ do
 			-- Create the title of the menu
 			info = Lib_UIDropDownMenu_CreateInfo()
 			info.isTitle 		= 1
-			info.text 		= "HandyNotes - " ..L["PLUGIN_NAME"]
+			info.text 		= "HandyNotes - " ..addon.pluginName
 			info.notCheckable 	= 1
 			Lib_UIDropDownMenu_AddButton(info, level)
 
