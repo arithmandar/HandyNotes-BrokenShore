@@ -3,6 +3,13 @@ $Id$
 Revision History:
 =================
 
+* v1.16 (May 25, 2017)
+-----------------------
+- Lib update:
+  - Replace NoTaint_UIDropDownMenu with LibUIDropDownMenu
+- Enhanced dropdown menu's behavior when world map is changed or closed
+- Fixed issue that no-lib version was not able to locate LibBabble-SubZone-3.0
+
 * v1.15 (May 22, 2017)
 -----------------------
 - Fixed localization key issue. 
