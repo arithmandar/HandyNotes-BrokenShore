@@ -3,6 +3,11 @@ $Id$
 Revision History:
 =================
 
+* v1.17 (Jun. 08, 2017)
+-----------------------
+- Localization update:
+  - Russian (DogmatX)
+
 * v1.16 (May 25, 2017)
 -----------------------
 - Lib update:
