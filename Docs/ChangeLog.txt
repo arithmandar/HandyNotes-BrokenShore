@@ -3,6 +3,10 @@ $Id$
 Revision History:
 =================
 
+* v1.18 (Jun. 13, 2017)
+-----------------------
+- Added Unstable Nether Portal's locations
+
 * v1.17 (Jun. 08, 2017)
 -----------------------
 - Localization update:
