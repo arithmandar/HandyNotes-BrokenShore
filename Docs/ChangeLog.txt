@@ -5,11 +5,13 @@ Revision History:
 
 * v1.19 (Jul. 02, 2017)
 -----------------------
-- Updated PlaySound API's usage method to support both 7.2.5 and 7.3.0 of WoW clients
 - Lib Update: LibUIDropDownMenu
 - Treasure data updated
 - Rare node enhanced
 - Nether portals' location tuning
+# For Development:
+  - Added iterCont() to allow POIs to be displayed on continent maps
+    (but for now I have not yet decided to activate this feature)
 
 * v1.18 (Jun. 13, 2017)
 -----------------------

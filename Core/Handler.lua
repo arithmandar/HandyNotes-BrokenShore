@@ -359,7 +359,7 @@ do
 		currentLevel = level
 		local C = HandyNotes:GetContinentZoneList(mapFile) -- Is this a continent?
 
-		if C and private.db.showNodesOnContinentMap then
+		if C and private.db.showNodesOnContinentMap then -- Once we added a config section in config panel, user will be able to toggle this
 			local tbl = { C = C, Z = next(C) }
 			return iterCont, tbl, nil
 		else

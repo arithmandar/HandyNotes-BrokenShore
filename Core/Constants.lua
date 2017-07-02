@@ -38,6 +38,7 @@ constants.defaults = {
 		ignore_InOutDoor = false,
 		hide_completed = true,
 		show_coords = false,
+		showNodesOnContinentMap = false,
 	},
 	char = {
 		hidden = {
