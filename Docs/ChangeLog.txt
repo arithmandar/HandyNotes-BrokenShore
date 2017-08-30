@@ -3,6 +3,11 @@ $Id$
 Revision History:
 =================
 
+* v1.20 (Aug. 30, 2017)
+-----------------------
+- ToC update to support WoW 7.3.0
+- Lib Update: LibUIDropDownMenu, LibBabble-SubZone-3.0
+
 * v1.19 (Jul. 02, 2017)
 -----------------------
 - Lib Update: LibUIDropDownMenu
