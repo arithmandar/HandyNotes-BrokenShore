@@ -3,6 +3,10 @@ $Id$
 Revision History:
 =================
 
+* v1.22 (Nov. 09, 2017)
+-----------------------
+- Set libs to be packaged by curseforge packager
+
 * v1.21 (Aug. 31, 2017)
 -----------------------
 - Lib Update: LibUIDropDownMenu
