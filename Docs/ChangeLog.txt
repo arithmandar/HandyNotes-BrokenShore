@@ -3,11 +3,11 @@ $Id$
 Revision History:
 =================
 
-* v1.24 (Apr. 25, 2017)
+* v1.24 (Apr. 25, 2018)
 -----------------------
 - Lib update: LibUIDropDownMenu
 
-* v1.23 (Jan. 22, 2017)
+* v1.23 (Jan. 22, 2018)
 -----------------------
 - Translation update:
   - Portuguese (cleitontf)
