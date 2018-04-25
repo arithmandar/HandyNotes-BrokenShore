@@ -3,6 +3,10 @@ $Id$
 Revision History:
 =================
 
+* v1.23 (Apr. 25, 2017)
+-----------------------
+- Lib update: LibUIDropDownMenu
+
 * v1.22 (Jan. 22, 2017)
 -----------------------
 - Translation update:
