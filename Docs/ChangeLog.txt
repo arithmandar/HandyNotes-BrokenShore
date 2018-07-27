@@ -3,6 +3,10 @@ $Id$
 Revision History:
 =================
 
+* v1.26 (Jul. 27, 2018)
+-----------------------
+- Fixed RequiredDeps issue
+
 * v1.25 (Jul. 26, 2018)
 -----------------------
 - Toc update to support WoW 8.0.1
