@@ -3,6 +3,11 @@ $Id$
 Revision History:
 =================
 
+* v1.28 (Aug. 06, 2018)
+-----------------------
+- Remove LibUIDropDown
+- Fixed TomTom waypoint's function call issue
+
 * v1.27 (Jul. 27, 2018)
 -----------------------
 - Update codes to synch with latest HandyNotes and use MapID, GetNodes2
