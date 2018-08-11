@@ -3,6 +3,10 @@ $Id$
 Revision History:
 =================
 
+* v1.29 (Aug. 12, 2018)
+-----------------------
+- Lib Update: LibBabble-SubZone-3.0
+
 * v1.28 (Aug. 06, 2018)
 -----------------------
 - Remove LibUIDropDown
