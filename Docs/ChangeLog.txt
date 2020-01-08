@@ -6,6 +6,7 @@ Revision History:
 * v1.32 (Jan. 09, 2020)
 -----------------------
 - Toc update to support WoW 8.2.5
+- Lib Update: LibBabble-SubZone-3.0
 
 * v1.31 (Sep. 03, 2019)
 -----------------------
