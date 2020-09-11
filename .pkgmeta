@@ -9,12 +9,14 @@ enable-nolib-creation: yes
 externals:
     Libs-release/LibBabble-SubZone-3.0: 
         url: https://repos.wowace.com/wow/libbabble-subzone-3-0/trunk
-#    Libs-release/LibUIDropDownMenu: 
-#        url: https://repos.wowace.com/wow/libuidropdownmenu/trunk/LibUIDropDownMenu
-
-ignore:
-    - Images/PSD
+    Libs-release/LibUIDropDownMenu: 
+        url: https://repos.wowace.com/wow/libuidropdownmenu/trunk/LibUIDropDownMenu
 
 move-folders:
     HandyNotes_BrokenShore/Libs: HandyNotes_BrokenShore/Libs-dev
     HandyNotes_BrokenShore/Libs-release: HandyNotes_BrokenShore/Libs
+
+ignore:
+    - Images/PSD
+    - Libs-dev
+

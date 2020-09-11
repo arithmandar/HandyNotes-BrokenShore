@@ -34,7 +34,7 @@
 ## Author: arith
 ## Version: @project-version@
 ## RequiredDeps: HandyNotes
-## OptionalDeps: LibBabble-SubZone-3.0
+## OptionalDeps: LibBabble-SubZone-3.0, !LibUIDropDownMenu
 ## DefaultState: enabled
 ## SavedVariables: HandyNotes_BrokenShoreDB
 ## X-Date: @project-date-iso@
