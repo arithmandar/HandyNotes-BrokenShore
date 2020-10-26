@@ -3,6 +3,10 @@ $Id$
 Revision History:
 =================
 
+* v1.38 (Oct. 26, 2020)
+-----------------------
+- Library update: LibBabble-SubZone
+
 * v1.37 (Oct. 21, 2020)
 -----------------------
 - Lib Update: LibUIDropDown
