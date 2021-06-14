@@ -3,6 +3,10 @@ $Id$
 Revision History:
 =================
 
+* v1.41 (Jun. 14, 2021)
+-----------------------
+- Library update - LibUIDropDown
+
 * v1.40 (May 19, 2021)
 -----------------------
 - ToC update to support WoW 9.0.5
@@ -11,7 +15,7 @@ Revision History:
 -----------------------
 - Toc update to support WoW 9.0.2
 - Disable no-lib release as the new CurseForge seems to bring-in more torubles for users to download addon
-- Library update - LibCurrency
+- Library update - LibUIDropDown
 
 * v1.38 (Oct. 26, 2020)
 -----------------------
