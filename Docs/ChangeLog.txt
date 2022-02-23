@@ -3,6 +3,10 @@ $Id$
 Revision History:
 =================
 
+* v1.46 (Feb. 23, 2022)
+-----------------------
+- Library update: LibBabble-SubZone
+
 * v1.45 (Feb. 23, 2022)
 -----------------------
 - Toc update to support WoW 9.2.0
