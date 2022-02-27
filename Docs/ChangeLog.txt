@@ -3,6 +3,10 @@ $Id$
 Revision History:
 =================
 
+* v1.47 (Feb. 28, 2022)
+-----------------------
+- Library update - LibUIDropDownMenu
+
 * v1.46 (Feb. 23, 2022)
 -----------------------
 - Library update: LibBabble-SubZone
