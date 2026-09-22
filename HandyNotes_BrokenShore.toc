@@ -1,36 +1,26 @@
-﻿## Interface: 100007
-#@non-debug@
-## Title: @localization(locale="enUS", key="Title", namespace="ToC")@
-## Title-deDE: @localization(locale="deDE", key="Title", namespace="ToC")@
-## Title-esES: @localization(locale="esES", key="Title", namespace="ToC")@
-## Title-esMX: @localization(locale="esMX", key="Title", namespace="ToC")@
-## Title-frFR: @localization(locale="frFR", key="Title", namespace="ToC")@
-## Title-itIT: @localization(locale="itIT", key="Title", namespace="ToC")@
-## Title-koKR: @localization(locale="koKR", key="Title", namespace="ToC")@
-## Title-ptBR: @localization(locale="ptBR", key="Title", namespace="ToC")@
-## Title-ruRU: @localization(locale="ruRU", key="Title", namespace="ToC")@
-## Title-zhCN: @localization(locale="zhCN", key="Title", namespace="ToC")@
-## Title-zhTW: @localization(locale="zhTW", key="Title", namespace="ToC")@
-## Notes: @localization(locale="enUS", key="Description", namespace="ToC")@
-## Notes-deDE: @localization(locale="deDE", key="Description", namespace="ToC")@
-## Notes-esES: @localization(locale="esES", key="Description", namespace="ToC")@
-## Notes-esMX: @localization(locale="esMX", key="Description", namespace="ToC")@
-## Notes-frFR: @localization(locale="frFR", key="Description", namespace="ToC")@
-## Notes-itIT: @localization(locale="itIT", key="Description", namespace="ToC")@
-## Notes-koKR: @localization(locale="koKR", key="Description", namespace="ToC")@
-## Notes-ptBR: @localization(locale="ptBR", key="Description", namespace="ToC")@
-## Notes-ruRU: @localization(locale="ruRU", key="Description", namespace="ToC")@
-## Notes-zhCN: @localization(locale="zhCN", key="Description", namespace="ToC")@
-## Notes-zhTW: @localization(locale="zhTW", key="Description", namespace="ToC")@
-#@end-non-debug@
-#@debug@
+﻿## Interface: 120100
 ## Title: HandyNotes - Broken Shore
+## Notes: Shows points of interest in Broken Shore
+## Title-deDE: HandyNotes – Verheerte Küste
+## Notes-deDE: Zeigt interessante Orte an der Verheerten Küste an
+## Title-esES: HandyNotes: Costa Abrupta
+## Notes-esES: Muestra puntos de interés en la Costa Abrupta
+## Title-esMX: HandyNotes: Costa Abrupta
+## Notes-esMX: Muestra puntos de interés en la Costa Abrupta
+## Title-frFR: HandyNotes – Rivage brisé
+## Notes-frFR: Affiche les points d’intérêt sur le rivage Brisé
+## Title-itIT: HandyNotes - Riva Dispersa
+## Notes-itIT: Mostra i punti d’interesse sulla Riva Dispersa
+## Title-koKR: HandyNotes - 부서진 해안
+## Notes-koKR: 부서진 해안의 관심 지점을 표시합니다
+## Title-ptBR: HandyNotes - Costa Partida
+## Notes-ptBR: Mostra pontos de interesse na Costa Partida
+## Title-ruRU: HandyNotes — Расколотый берег
+## Notes-ruRU: Показывает достопримечательности Расколотого берега
 ## Title-zhCN: HandyNotes - 破碎海滩
+## Notes-zhCN: 显示破碎海滩的兴趣点
 ## Title-zhTW: HandyNotes - 破碎海岸
-## Notes: Shows the POIs in Broken Shore
-## Notes-zhCN: 顯示破碎海滩的 POI 位置
-## Notes-zhTW: 顯示破碎海岸的 POI 位置
-#@end-debug@
+## Notes-zhTW: 顯示破碎海岸的興趣點
 ## Author: arith
 ## Version: @project-version@
 ## RequiredDeps: HandyNotes
@@ -40,6 +30,17 @@
 ## X-Date: @project-date-iso@
 ## X-License: GPLv2
 ## X-Category: Map
+## Category: Map
+## Category-deDE: Karte
+## Category-esES: Mapa
+## Category-esMX: Mapa
+## Category-frFR: Carte
+## Category-itIT: Mappa
+## Category-koKR: 지도
+## Category-ptBR: Mapa
+## Category-ruRU: Карта
+## Category-zhCN: 地图
+## Category-zhTW: 地圖
 
 Libs\Libs.xml
 Locale\Locales.xml

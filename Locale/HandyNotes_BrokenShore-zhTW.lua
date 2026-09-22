@@ -1,11 +1,10 @@
-﻿-- $Id$
+-- $Id$
 
 local L = LibStub("AceLocale-3.0"):NewLocale("HandyNotes_BrokenShore", "zhTW", false)
 
 if not L then return end
 
 if L then
---@do-not-package@
 -- //////////////////////////
 -- Addon
 -- //////////////////////////
@@ -81,6 +80,4 @@ L["Inside the ship, on the middle deck"] = "在船艦裡面，中間甲板"
 L["On top of the tower"] = "在塔頂"
 L["Inside the tower"] = "在塔裡"
 
---@end-do-not-package@
---@localization(locale="zhTW", format="lua_additive_table", handle-subnamespaces="none", handle-unlocalized="ignore", namespace="")@
 end

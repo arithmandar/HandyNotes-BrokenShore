@@ -1,11 +1,10 @@
-﻿-- $Id$
+-- $Id$
 
 local L = LibStub("AceLocale-3.0"):NewLocale("HandyNotes_BrokenShore", "zhCN", false)
 
 if not L then return end
 
 if L then
---@do-not-package@
 -- //////////////////////////
 -- Addon
 -- //////////////////////////
@@ -31,8 +30,15 @@ L["Ramp"] = "斜坡"
 L["Show ramp to the higher ground. This could be useful before you can fly!"] = "显示通往高地的斜坡节点。这在您可以飞行之前应该相当有用！"
 L["Rare mobs"] = "稀有怪"
 L["Show rare mobs' location even if any of them has not yet spawned."] = "显示稀有菁英怪的节点，即便他们还没重生。"
-L["Wyrmtongue Chest"] = "虫舌魔宝箱"
+L["Wyrmtongue Chest"] = "虫语者箱子"
 L["Show possible spawning location of Veiled Wyrmtongue Chest."] = "显示「隐密的虫舌魔宝箱」可能的重生点。"
+L["Ancient Shrine"] = "古代祭坛"
+L["Show Ancient Shrine's locations."] = "显示古代祭坛的节点位置。"
+-- L["Smoldering Infernal Core"] = "Smoldering Infernal Core"
+-- L["Show Smoldering Infernal Core's locations."] = "Show Smoldering Infernal Core's locations."
+-- L["Show Master Pet Tamer's location."] = "Show Master Pet Tamer's location."
+-- L["Unstable Nether Portal"] = "Unstable Nether Portal"
+-- L["Show Unstable Nether Portal's location."] = "Show Unstable Nether Portal's location."
 L["Others"] = "其他"
 L["Show all the other misc nodes."] = "显示所有其他杂项节点。"
 -- AddOn Settings
@@ -45,6 +51,8 @@ L["Hide looted mobs"] = "隐藏已击杀"
 L["Hide the rare elite mobs which have been killed and looted today."] = "隐藏今日已击杀并拾取的稀有菁英怪。"
 L["Reset hidden nodes"] = "重设所有被隐藏的节点"
 L["Show all nodes that you manually hid by right-clicking on them and choosing \"hide\"."] = "将您手动把 POI 设为隐藏的节点还原成全部都显示。"
+-- L["Show coordinate"] = "Show coordinate"
+-- L["Show node's coordinate information."] = "Show node's coordinate information."
 
 -- //////////////////////////
 -- Common
@@ -61,9 +69,15 @@ L["Inside %s"] = "在%s里面"
 -- Others
 -- //////////////////////////
 L["Peculiar Rope"] = "奇异的绳索"
-L["Veiled Wyrmtongue Chest"] = "隐密的虫舌魔宝箱"
+L["Veiled Wyrmtongue Chest"] = "隐蔽的虫语者箱子"
 L["Add all treasure nodes to TomTom waypoints"] = "将所有的宝箱节点加到 TomTom 路径上"
+L["Add all Ancient Shrine nodes to TomTom waypoints"] = "将所有的古代祭坛节点加到 TomTom 路径上"
+-- L["Add all Unstable Nether Portal nodes to TomTom waypoints"] = "Add all Unstable Nether Portal nodes to TomTom waypoints"
+L["the cave in Stonefin Shoals"] = "石鳍海滩洞穴"
+-- L["Ancient Tomb"] = "Ancient Tomb"
+L["Inside the ship"] = "在船内"
+L["Inside the ship, on the middle deck"] = "在沉船内，从甲板中间的楼梯下去"
+L["On top of the tower"] = "在塔外面的塔顶"
+L["Inside the tower"] = "在塔内"
 
---@end-do-not-package@
---@localization(locale="zhCN", format="lua_additive_table", handle-subnamespaces="none", handle-unlocalized="ignore", namespace="")@
 end

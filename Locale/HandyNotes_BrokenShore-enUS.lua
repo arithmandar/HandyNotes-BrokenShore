@@ -4,7 +4,6 @@ local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale("HandyNotes_BrokenShore", "enUS", true, true);
 
 if L then
---@do-not-package@
 -- //////////////////////////
 -- Addon
 -- //////////////////////////
@@ -80,6 +79,4 @@ L["Inside the ship, on the middle deck"] = "Inside the ship, on the middle deck"
 L["On top of the tower"] = "On top of the tower"
 L["Inside the tower"] = "Inside the tower"
 
---@end-do-not-package@
---@localization(locale="enUS", format="lua_additive_table", handle-subnamespaces="none", handle-unlocalized="ignore", namespace="")@
 end
