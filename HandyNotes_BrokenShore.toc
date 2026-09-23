@@ -41,6 +41,7 @@
 ## Category-ruRU: Карта
 ## Category-zhCN: 地图
 ## Category-zhTW: 地圖
+## IconTexture: Interface\icons\achievement_zone_brokenshore
 
 Libs\Libs.xml
 Locale\Locales.xml

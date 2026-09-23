@@ -14,6 +14,7 @@ local GameTooltip, GetSpellInfo, CreateFrame, UnitClass = _G.GameTooltip, C_Spel
 
 local WorldMapTooltip = GameTooltip
 local IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted
+local GetTitleForQuestID = C_QuestLog.GetTitleForQuestID
 
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
@@ -40,6 +41,13 @@ addon.Name = FOLDER_NAME
 _G.HandyNotes_BrokenShore = addon
 
 local profile
+
+-- //////////////////////////////////////////////////////////////////////////
+-- activation code
+local function getQuestTitlebyID(id)
+	local questTitle = GetTitleForQuestID(id)
+	return questTitle
+end
 
 -- //////////////////////////////////////////////////////////////////////////
 -- get creature's name from server
@@ -116,9 +124,9 @@ local function handle_tooltip(tooltip, point, coord)
 			end
 		end
 		if (point.spell) then
-			local spellName = GetSpellInfo(point.spell)
-			if (spellName) then
-				tooltip:AddLine(spellName, 1, 1, 1, true)
+			local spellinofo = GetSpellInfo(point.spell)
+			if (spellinofo and spellinofo.name) then
+				tooltip:AddLine(spellinofo.name, 1, 1, 1, true)
 			end
 		end
 		if (point.note and profile.show_note) then
@@ -128,15 +136,16 @@ local function handle_tooltip(tooltip, point, coord)
 			local x, y = HandyNotes:getXY(coord)
 			tooltip:AddLine(format("%.2f, %.2f", x*100, y*100), 1, 1, 1, true)
 		end
---@debug@
 		if (point.quest) then
+			local questTitle = getQuestTitlebyID(point.quest) or UNKNOWN
+			tooltip:AddLine(QUESTS_COLON..questTitle, 1, 1, 1)
+			tooltip:SetHyperlink(("quest:%d[%%s]"):format(point.quest))
 			if (IsQuestFlaggedCompleted(point.quest)) then
 				tooltip:AddDoubleLine(L["QuestID"], point.quest or UNKNOWN, 0.5, 0.5, 1, 1, 0.5, 1)
 			else
 				tooltip:AddDoubleLine(L["QuestID"], point.quest or UNKNOWN, 0.5, 0.5, 1, 0.5, 0.5, 1)
 			end
 		end
---@end-debug@
 	else
 		tooltip:SetText(UNKNOWN)
 	end
