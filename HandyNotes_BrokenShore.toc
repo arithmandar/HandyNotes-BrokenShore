@@ -21,15 +21,6 @@
 ## Notes-zhCN: 显示破碎海滩的兴趣点
 ## Title-zhTW: HandyNotes - 破碎海岸
 ## Notes-zhTW: 顯示破碎海岸的興趣點
-## Author: arith
-## Version: @project-version@
-## RequiredDeps: HandyNotes
-## OptionalDeps: LibBabble-SubZone-3.0, !LibUIDropDownMenu
-## DefaultState: enabled
-## SavedVariables: HandyNotes_BrokenShoreDB
-## X-Date: @project-date-iso@
-## X-License: GPLv2
-## X-Category: Map
 ## Category: Map
 ## Category-deDE: Karte
 ## Category-esES: Mapa
@@ -41,7 +32,19 @@
 ## Category-ruRU: Карта
 ## Category-zhCN: 地图
 ## Category-zhTW: 地圖
+## Author: arith
+## Version: @project-version@
+## RequiredDeps: HandyNotes
+## OptionalDeps: LibBabble-SubZone-3.0, !LibUIDropDownMenu
+## DefaultState: enabled
+## SavedVariables: HandyNotes_BrokenShoreDB
+## X-Website: https://www.curseforge.com/wow/addons/handynotes-broken-shore
+## X-Date: @project-date-iso@
+## X-License: GPLv2
+## X-Category: Map
 ## IconTexture: Interface\icons\achievement_zone_brokenshore
+## X-Curse-Project-ID: 265722
+## X-WoWI-ID: 24405
 
 Libs\Libs.xml
 Locale\Locales.xml
