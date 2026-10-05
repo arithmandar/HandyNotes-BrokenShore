@@ -1,5 +1,5 @@
-﻿-- $Id$
-
+﻿local _G = getfenv(0)
+local LibStub = _G.LibStub
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale("HandyNotes_BrokenShore", "enUS", true, true);
 
@@ -78,5 +78,5 @@ L["Inside the ship"] = "Inside the ship"
 L["Inside the ship, on the middle deck"] = "Inside the ship, on the middle deck"
 L["On top of the tower"] = "On top of the tower"
 L["Inside the tower"] = "Inside the tower"
-
+L["QuestID"] = "Quest ID"
 end

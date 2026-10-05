@@ -3,6 +3,11 @@ $Id$
 Revision History:
 =================
 
+* v1.55 (Oct. 05, 2026)
+-----------------------
+- Update all translations
+- Migrated from CurseForge to GitHub, and added auto-packaging for both CurseForge and WoWInterface
+
 * v1.54 (Sep. 23, 2026)
 -----------------------
 - Fixed SpellInfo's function call and now we can correctly retrieve spell information

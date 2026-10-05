@@ -1,4 +1,3 @@
--- $Id$
 -----------------------------------------------------------------------
 -- Upvalued Lua API.
 -----------------------------------------------------------------------
@@ -6,13 +5,14 @@
 local _G = getfenv(0)
 -- Libraries
 local string = _G.string
-local format, gsub = string.format, string.gsub
-local next, wipe, pairs, select, type = next, wipe, pairs, select, type
-local C_Spell, C_QuestLog = _G.C_Spell, _G.C_QuestLog
-local GameTooltip, GetSpellInfo, CreateFrame, UnitClass = _G.GameTooltip, C_Spell.GetSpellInfo, _G.CreateFrame, _G.UnitClass
---local UIDropDownMenu_CreateInfo, CloseDropDownMenus, UIDropDownMenu_AddButton, ToggleDropDownMenu = L_UIDropDownMenu_CreateInfo, L_CloseDropDownMenus, L_UIDropDownMenu_AddButton, L_ToggleDropDownMenu
+local format = string.format
+local next, pairs, select = next, pairs, select
+local C_Spell = _G.C_Spell
+local GetSpellInfo = C_Spell.GetSpellInfo
+local GameTooltip, UnitClass = _G.GameTooltip, _G.UnitClass
 
 local WorldMapTooltip = GameTooltip
+local C_QuestLog = _G.C_QuestLog
 local IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted
 local GetTitleForQuestID = C_QuestLog.GetTitleForQuestID
 
@@ -451,7 +451,7 @@ function addon:OnInitialize()
 end
 
 function addon:OnEnable()
-	for key, value in pairs( addon.constants.events ) do
+	for _, value in pairs( addon.constants.events ) do
 		self:RegisterEvent( value );
 	end
 end

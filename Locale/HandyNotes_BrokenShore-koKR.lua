@@ -1,5 +1,5 @@
--- $Id$
-
+local _G = getfenv(0)
+local LibStub = _G.LibStub
 local L = LibStub("AceLocale-3.0"):NewLocale("HandyNotes_BrokenShore", "koKR", false)
 
 if not L then return end
@@ -79,5 +79,5 @@ L["Inside the ship"] = "배 내부"
 L["Inside the ship, on the middle deck"] = "배 내부, 갑판 중앙"
 L["On top of the tower"] = "탑 꼭대기"
 L["Inside the tower"] = "탑 내부"
-
+L["QuestID"] = "퀘스트 ID"
 end
