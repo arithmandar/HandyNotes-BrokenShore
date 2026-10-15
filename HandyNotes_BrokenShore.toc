@@ -1,4 +1,4 @@
-﻿## Interface: 120100
+﻿## Interface: 120105
 ## Title: HandyNotes - Broken Shore
 ## Notes: Shows points of interest in Broken Shore
 ## Title-deDE: HandyNotes – Verheerte Küste
